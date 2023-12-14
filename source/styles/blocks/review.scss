@@ -1,0 +1,21 @@
+.review {
+  background-color: $darken-text-background;
+}
+
+.review__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.review__text {
+  font-family: $secondary-font;
+  line-height: 18px;
+  color: $paragraf-font-color;
+}
+
+.review__sats-text {
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}

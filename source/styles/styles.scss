@@ -1,12 +1,14 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/common.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/common.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
 
 // Index page
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
@@ -14,7 +16,6 @@
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/main-title.scss";
-@import "./blocks/button.scss";
 @import "./blocks/target.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/review.scss";
