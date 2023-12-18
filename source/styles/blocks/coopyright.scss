@@ -1,0 +1,9 @@
+.coopyright {
+  @include link();
+}
+
+.coopyright__text {
+  font-family: $secondary-font;
+  color: $paragraf-font-color;
+  line-height: 20px;
+}

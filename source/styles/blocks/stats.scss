@@ -1,0 +1,16 @@
+.stats {
+  @include list();
+}
+
+.stats__number {
+  text-align: center;
+  font-size: 24px;
+}
+
+.stats__comment {
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $paragraf-font-color;
+}

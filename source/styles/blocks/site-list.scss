@@ -1,0 +1,10 @@
+.site-list {
+  @include list();
+}
+
+.site-list__link {
+  @include link();
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,15 @@
+.button {
+  @include link();
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $primary-color;
+  color: #ffffff;
+  border: none;
+
+  &--secondary {
+    background-color: $basic-text-background;
+    color: $paragraf-font-color;
+  }
+}
