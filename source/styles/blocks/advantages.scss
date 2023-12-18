@@ -4,6 +4,10 @@
   line-height: 40px;
 }
 
+.advantages__list {
+  @include list();
+}
+
 .advantages__list-item {
   font-family: $secondary-font;
   line-height: 18px;

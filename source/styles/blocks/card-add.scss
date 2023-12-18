@@ -6,6 +6,10 @@
   color: #222222;
 }
 
+.card-add__list {
+  @include list();
+}
+
 .card-add__list-item span {
   font-family: $secondary-font;
   text-align: center;

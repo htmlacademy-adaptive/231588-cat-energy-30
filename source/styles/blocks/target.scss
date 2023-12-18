@@ -4,6 +4,10 @@
   text-transform: uppercase;
 }
 
+.target__list {
+  @include list();
+}
+
 .target__list-item {
   background-color: $basic-text-background;
 }
@@ -15,6 +19,7 @@
 }
 
 .target__link {
+  @include link();
   text-align: center;
   font-size: 16px;
   line-height: 16px;
