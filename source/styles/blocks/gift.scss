@@ -3,7 +3,7 @@
   flex-direction: column-reverse;
   min-height: 290px;
 
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/image_gift-mobile@1x.jpg");
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image_gift-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,7 +19,7 @@
   color: #ffffff;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -100px;
     left: 101px;

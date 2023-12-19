@@ -18,7 +18,7 @@
   text-transform: uppercase;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 4px;
 
@@ -40,7 +40,6 @@
 
     background-image: url("../../images/icons/stack.svg#catalog-pro");
   }
-
 }
 
 
@@ -61,7 +60,7 @@
   text-transform: uppercase;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 7px;
     right: 0;
