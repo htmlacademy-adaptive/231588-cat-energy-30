@@ -7,9 +7,27 @@
 }
 
 .card {
+  &:last-child {
+    padding-top: 25px;
+  }
+
   &:last-child .card__title {
+    position: relative;
+    padding-top: 23px;
     text-align: center;
     color: #111111;
+  }
+
+  &:last-child .card__title::before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 45%;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../../images/icons/stack.svg#plus");
+    background-repeat: no-repeat;
   }
 }
 

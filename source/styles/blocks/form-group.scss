@@ -10,6 +10,29 @@
   color: $paragraf-font-color;
 }
 
+.form-group__item-input {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--email::before {
+    background-image: url("../../images/icons/stack.svg#email-stroke");
+  }
+
+  &--name::before {
+    background-image: url("../../images/icons/stack.svg#email-stroke");
+  }
+}
+
 .form-group__item-input::placeholder {
   line-height: 18px;
   text-transform: uppercase;

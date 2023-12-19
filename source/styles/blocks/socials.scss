@@ -1,4 +1,55 @@
 .socials {
   @include list();
+  display: flex;
+  justify-content: space-around;
+
   font-size: 16px;
+}
+
+.socials__item {
+  width: 28px;
+  height: 22px;
+}
+
+.socials__link {
+  @include link();
+  position: relative;
+
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 0;
+
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &--vk::before {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#youtube");
+  }
+
+  &--telegram::before {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#telegram");
+  }
+
+  &::before:hover {
+    background-color: $primary-color;
+  }
+
+  &::before:focus {
+    opacity: 0.3;
+  }
 }

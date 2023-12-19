@@ -1,7 +1,3 @@
-.map {
-  background-color: $basic-text-background;
-}
-
 .map__title {
   font-size: 16px;
   line-height: 20px;
@@ -13,4 +9,8 @@
   font-family: $secondary-font;
   line-height: 20px;
   color: $paragraf-font-color;
+}
+
+.map__image {
+  background-color: $basic-text-background;
 }
