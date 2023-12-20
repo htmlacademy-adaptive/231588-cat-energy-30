@@ -5,11 +5,11 @@
 
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image_gift-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .gift__text {
   position: relative;
+  margin: 0;
   padding-top: 80px;
 
   font-family: $secondary-font;

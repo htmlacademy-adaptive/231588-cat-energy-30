@@ -8,27 +8,39 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $paragraf-font-color;
+
+  &--textarea {
+    font-family: $primary-font;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 }
 
 .form-group__item-input {
-  position: relative;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: 12px;
-    width: 20px;
-    height: 20px;
+  // & {
 
-    background-repeat: no-repeat;
-  }
+  //   position: absolute;
+  //   top: 13px;
+  //   right: 12px;
+  //   width: 20px;
+  //   height: 20px;
 
-  &--email::before {
+  //   background-repeat: no-repeat;
+  // }
+
+  &--email {
     background-image: url("../../images/icons/stack.svg#email-stroke");
   }
 
-  &--name::before {
+  &--name {
     background-image: url("../../images/icons/stack.svg#email-stroke");
   }
 }

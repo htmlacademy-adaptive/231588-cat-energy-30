@@ -1,5 +1,33 @@
 .coopyright {
   @include link();
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  vertical-align: middle;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+
+    mask-image: url("../../images/icons/stack.svg#logo-html-academy");
+    background-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &:hover::before {
+    background-color: $primary-color;
+  }
+
+  &:hover span {
+    color: $primary-color;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .coopyright__text {
