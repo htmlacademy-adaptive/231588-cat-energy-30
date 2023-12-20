@@ -1,4 +1,48 @@
 .socials {
   @include list();
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
   font-size: 16px;
+}
+
+.socials__item {
+  width: 28px;
+  height: 22px;
+}
+
+.socials__link {
+  @include link();
+  display: block;
+
+  cursor: pointer;
+
+  background-color: #666666;
+
+  &--vk {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#vkontakte");
+  }
+
+  &--youtube {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#youtube");
+  }
+
+  &--telegram {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#telegram");
+  }
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }

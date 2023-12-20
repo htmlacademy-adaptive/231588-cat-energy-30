@@ -1,6 +1,7 @@
 .advantages__title {
-  text-align: center;
+  margin: 0;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
 }
 
@@ -9,7 +10,39 @@
 }
 
 .advantages__list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 22px;
+
   font-family: $secondary-font;
+  font-size: 14px;
   line-height: 18px;
   color: $paragraf-font-color;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--nutrition::before {
+    background-image: url("../../images/icons/stack.svg#advantages-1");
+  }
+
+  &--cooking::before {
+    background-image: url("../../images/icons/stack.svg#advantages-2");
+  }
+
+  &--meal::before {
+    background-image: url("../../images/icons/stack.svg#advantages-3");
+  }
+
+  &--loss::before {
+    background-image: url("../../images/icons/stack.svg#advantages-4");
+  }
 }

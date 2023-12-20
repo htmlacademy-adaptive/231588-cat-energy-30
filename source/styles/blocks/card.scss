@@ -4,12 +4,38 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+
+  & h2 {
+    margin: 0;
+    font-weight: 400;
+  }
 }
 
 .card {
+  &:last-child {
+    padding-top: 25px;
+  }
+
   &:last-child .card__title {
+    position: relative;
+    margin: 0;
+    padding-top: 23px;
+
+    font-weight: 400;
     text-align: center;
     color: #111111;
+  }
+
+  &:last-child .card__title::before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 45%;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../../images/icons/stack.svg#plus");
+    background-repeat: no-repeat;
   }
 }
 

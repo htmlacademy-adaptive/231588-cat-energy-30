@@ -2,6 +2,10 @@
   @include list();
 }
 
+.site-list__item {
+  text-align: center;
+}
+
 .site-list__link {
   @include link();
   font-size: 20px;
