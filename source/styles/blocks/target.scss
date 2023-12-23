@@ -1,3 +1,8 @@
+.target {
+  @include container();
+  margin-bottom: 20px;
+}
+
 .target__list {
   @include list();
 }
@@ -71,5 +76,13 @@
 
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .target__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
   }
 }

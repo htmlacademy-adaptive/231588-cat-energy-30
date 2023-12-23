@@ -1,4 +1,6 @@
 .page {
+  height: 100%;
+
   font-family: $primary-font;
   font-size: 14px;
   font-style: normal;
@@ -8,5 +10,8 @@
 }
 
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   margin: 0;
 }
