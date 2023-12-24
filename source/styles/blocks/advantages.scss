@@ -2,6 +2,7 @@
   @include container();
   margin-bottom: 49px;
 }
+
 .advantages__title {
   margin: 0;
   padding-bottom: 40px;
@@ -55,7 +56,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-bottom: 47px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .advantages__title {
