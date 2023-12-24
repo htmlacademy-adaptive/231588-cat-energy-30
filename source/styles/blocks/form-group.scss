@@ -5,10 +5,6 @@
   border: none;
 }
 
-.form-group__title {
-  padding-bottom: 35px;
-}
-
 .form-group__item {
   position: relative;
   display: flex;
@@ -82,11 +78,11 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   border-radius: none;
 
   &:hover {
-    border-color: #CDCDCD;
+    border-color: #cdcdcd;
   }
 
   &:focus {
@@ -101,7 +97,7 @@
     background-color: $error-color;
   }
 
-  &:focus + span{
+  &:focus + span {
     background-color: $primary-color;
   }
 }
@@ -113,10 +109,9 @@
 }
 
 .form-group__title {
+  padding-bottom: 35px;
+
   font-size: 24px;
   line-height: 26px;
   color: $text-font-color;
-}
-
-@media (min-width: $tablet-width) {
 }

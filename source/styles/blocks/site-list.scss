@@ -16,7 +16,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  border-bottom: #E6E6E6 solid 1px;
+  border-bottom: #e6e6e6 solid 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,10 +43,10 @@
 @media (min-width: $desktop-width) {
   .site-list {
     &--light .site-list__link {
-      color: #FFFFFF;
+      color: #fffff;
 
       &--current {
-        border-color: #FFFFFF;
+        border-color: #fffff;
       }
     }
   }

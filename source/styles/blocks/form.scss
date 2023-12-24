@@ -20,7 +20,7 @@
 
 .form__item {
   &--anketa {
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid #d9d9d9;
   }
 
   &--radio {
@@ -28,7 +28,7 @@
     padding-top: 22px;
     padding-bottom: 19px;
 
-    border-bottom: 1px solid #D9D9D9
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
@@ -38,7 +38,7 @@
 }
 
 .form__bottom-btn {
-  width: 100%
+  width: 100%;
 }
 
 .form__bottom-text {
@@ -64,7 +64,7 @@
     &--radio {
       padding: 0;
       margin: 0;
-      border: 1px solid #E7E7E7;
+      border: 1px solid #e7e7e7;
     }
 
     &--checkbox {
@@ -85,7 +85,7 @@
 @media (min-width: $desktop-width) {
   .form {
     & .map__information {
-      background-color: #ffffff;
+      background-color: #fffff;
     }
   }
 
@@ -103,7 +103,7 @@
       gap: 80px;
 
       & label {
-        flex-grow: 1
+        flex-grow: 1;
       }
     }
 
@@ -115,5 +115,4 @@
   .form__bottom-btn {
     margin-right: 80px;
   }
-
 }

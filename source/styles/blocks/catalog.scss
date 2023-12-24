@@ -11,7 +11,7 @@
   padding-top: 27px;
   padding-bottom: 41px;
 
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .catalog__list {
@@ -23,7 +23,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,10 +39,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     margin-bottom: 70px; // не переопределяется
-  }
-
-  .catalog__list {
-    margin-bottom: 70px;
   }
 
   .catalog__item {
@@ -61,7 +57,7 @@
 
   .catalog {
     & .map__information {
-      background-color: #ffffff;
+      background-color: #fffff;
     }
   }
 }
