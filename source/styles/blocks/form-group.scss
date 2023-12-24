@@ -1,47 +1,108 @@
 .form-group {
-  display: flex;
-  flex-direction: column;
+  @include container();
+  padding-bottom: 24px;
+
   border: none;
 }
 
+.form-group__title {
+  padding-bottom: 35px;
+}
+
 .form-group__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $paragraf-font-color;
 
+  &--radio {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
   &--textarea {
+    width: 100%;
+    min-height: 140px;
+
     font-family: $primary-font;
     font-size: 16px;
     font-style: normal;
     line-height: 18px;
     text-transform: uppercase;
+
+    border-radius: unset;
+  }
+
+  &--checkbox {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    & input {
+      flex-grow: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  & span {
+    content: "";
+    position: absolute;
+    font-size: 0;
+    top: 13px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+
+    background-color: $text-font-color;
+  }
+
+  &--phone span {
+    mask-image: url("../../images/icons/stack.svg#phone-stroke");
+  }
+
+  &--email span {
+    mask-image: url("../../images/icons/stack.svg#email-stroke");
   }
 }
 
 .form-group__item-input {
+  flex-grow: 1;
+  margin-left: 13px;
+  padding: 14px 15px 13px 15px;
+
   font-family: $primary-font;
   font-size: 16px;
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
 
-  // & {
+  border: 1px solid #E7E7E7;
+  border-radius: none;
 
-  //   position: absolute;
-  //   top: 13px;
-  //   right: 12px;
-  //   width: 20px;
-  //   height: 20px;
-
-  //   background-repeat: no-repeat;
-  // }
-
-  &--email {
-    background-image: url("../../images/icons/stack.svg#email-stroke");
+  &:hover {
+    border-color: #CDCDCD;
   }
 
-  &--name {
-    background-image: url("../../images/icons/stack.svg#email-stroke");
+  &:focus {
+    border: 2px solid $paragraf-font-color;
+  }
+
+  &--error {
+    border: 2px solid $error-color;
+  }
+
+  &--error + span {
+    background-color: $error-color;
+  }
+
+  &:focus + span{
+    background-color: $primary-color;
   }
 }
 
@@ -55,4 +116,7 @@
   font-size: 24px;
   line-height: 26px;
   color: $text-font-color;
+}
+
+@media (min-width: $tablet-width) {
 }
