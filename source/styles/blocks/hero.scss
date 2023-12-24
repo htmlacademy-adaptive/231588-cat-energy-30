@@ -54,8 +54,8 @@
   .hero__title {
     width: 520px;
     margin: 0;
+    padding-top: 0;
     margin-bottom: 40px;
-    padding-top: 65px;
 
     text-align: left;
   }
@@ -95,7 +95,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -120px;
+      top: -195px;
       right: -110px;
       width: 720px;
       height: 694px;

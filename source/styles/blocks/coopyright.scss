@@ -1,12 +1,12 @@
 .coopyright {
   @include link();
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
 
   vertical-align: middle;
 
-  &::before {
+  &::after {
     content: "";
     display: block;
     width: 27px;
@@ -17,7 +17,7 @@
     background-color: #666666;
   }
 
-  &:hover::before {
+  &:hover::after {
     background-color: $primary-color;
   }
 

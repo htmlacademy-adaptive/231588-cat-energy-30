@@ -41,12 +41,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    &--light .site-list__link {
+      color: #FFFFFF;
+
+      &--current {
+        border-color: #FFFFFF;
+      }
+    }
+  }
+
   .site-list__link {
     padding-top: 71px;
-    color: #FFFFFF;
 
     &--current {
-      border-color: #FFFFFF;
+      border-color: $primary-color;
     }
   }
 }
