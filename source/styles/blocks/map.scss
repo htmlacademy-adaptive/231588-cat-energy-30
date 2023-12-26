@@ -29,6 +29,10 @@
 
 .map__image {
   background-color: $basic-text-background;
+
+  & img {
+    width: 100%;
+  }
 }
 
 @media (min-width: $tablet-width) {

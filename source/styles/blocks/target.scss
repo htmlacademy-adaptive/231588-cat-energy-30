@@ -70,12 +70,17 @@
     content: "";
     position: absolute;
     top: 7px;
-    right: 0;
-    width: 32px;
-    height: 10px;
+    left: 100px;
+    width: 25px;
+    height: 12px;
 
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
+    transition: width .1s;
+  }
+
+  &:hover::after {
+    width: 32px;
   }
 }
 

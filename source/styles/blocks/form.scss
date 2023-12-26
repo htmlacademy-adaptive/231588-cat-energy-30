@@ -93,6 +93,21 @@
     margin-bottom: 79px;
   }
 
+  .form__items-wrapper {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 80px;
+
+    & fieldset {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      flex-grow: 1;
+    }
+  }
+
   .form__item {
     margin-bottom: 72px;
 

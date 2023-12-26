@@ -1,6 +1,5 @@
 .advantages {
   @include container();
-  margin-bottom: 49px;
 }
 
 .advantages__title {
@@ -13,6 +12,7 @@
 
 .advantages__list {
   @include list();
+  margin-bottom: 49px;
 }
 
 .advantages__list-item {

@@ -10,6 +10,21 @@
   background-image: url("../../images/icons/stack.svg#thumb");
 }
 
-.slider__image {
-  position: relative;
+.slider__images {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto;
+
+  & picture:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+  }
+
+  & picture:last-child {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+  }
 }
+

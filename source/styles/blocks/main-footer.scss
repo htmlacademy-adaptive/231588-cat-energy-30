@@ -4,8 +4,6 @@
 
 .main-footer__wrapper {
   @include container();
-  display: flex;
-  flex-direction: column;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -39,6 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;

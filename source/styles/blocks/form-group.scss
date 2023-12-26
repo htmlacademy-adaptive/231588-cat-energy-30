@@ -79,14 +79,16 @@
   text-transform: uppercase;
 
   border: 1px solid #e7e7e7;
-  border-radius: none;
+  border-radius: unset;
 
   &:hover {
     border-color: #cdcdcd;
+    border-radius: unset;
   }
 
   &:focus {
     border: 2px solid $paragraf-font-color;
+    border-radius: unset;
   }
 
   &--error {
