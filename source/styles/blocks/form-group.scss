@@ -6,7 +6,6 @@
 }
 
 .form-group__item {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +31,7 @@
     line-height: 18px;
     text-transform: uppercase;
 
-    border-radius: unset;
+    border-radius: 0;
   }
 
   &--checkbox {
@@ -45,8 +44,13 @@
       margin: 0;
     }
   }
+}
 
-  & span {
+.form-group__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+
+  &::after {
     content: "";
     position: absolute;
     font-size: 0;
@@ -58,12 +62,38 @@
     background-color: $text-font-color;
   }
 
-  &--phone span {
+  & input {
+    width: 100%;
+  }
+
+  &--phone::after {
     mask-image: url("../../images/icons/stack.svg#phone-stroke");
   }
 
-  &--email span {
+  &--email::after {
     mask-image: url("../../images/icons/stack.svg#email-stroke");
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+    border-radius: 0;
+  }
+
+  &:focus {
+    border: 2px solid $paragraf-font-color;
+    border-radius: 0;
+  }
+
+  &--error {
+    border: 2px solid $error-color;
+  }
+
+  &--error + span {
+    background-color: $error-color;
+  }
+
+  &:focus + span {
+    background-color: $primary-color;
   }
 }
 
@@ -79,29 +109,7 @@
   text-transform: uppercase;
 
   border: 1px solid #e7e7e7;
-  border-radius: unset;
-
-  &:hover {
-    border-color: #cdcdcd;
-    border-radius: unset;
-  }
-
-  &:focus {
-    border: 2px solid $paragraf-font-color;
-    border-radius: unset;
-  }
-
-  &--error {
-    border: 2px solid $error-color;
-  }
-
-  &--error + span {
-    background-color: $error-color;
-  }
-
-  &:focus + span {
-    background-color: $primary-color;
-  }
+  border-radius: 0;
 }
 
 .form-group__item-input::placeholder {

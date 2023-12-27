@@ -113,14 +113,20 @@
 
         <div class="review__slider slider">
           <div class="slider__images">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__img slider__img--left" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
-            </picture>
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__img slider__img--right" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
-            </picture>
+            <div class="slider__images-wrapper">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__img slider__img--left" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
+              </picture>
+            </div>
+
+            <div class="slider__images-wrapper">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__img slider__img--right" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
+              </picture>
+            </div>
+
           </div>
           <button class="slider__swiper" type="button">
             <span class="visually-hidden">Влево-Вправо</span>
@@ -130,7 +136,7 @@
 
       <section class="map">
         <div class="map__information">
-          <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="map__image">

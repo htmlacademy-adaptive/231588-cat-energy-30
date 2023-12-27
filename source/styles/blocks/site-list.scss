@@ -23,7 +23,9 @@
   .site-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     column-gap: 33px;
+    row-gap: 20px;
   }
 
   .site-list__link {
