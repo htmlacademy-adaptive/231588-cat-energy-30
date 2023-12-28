@@ -8,7 +8,56 @@
 
 .site-list__link {
   @include link();
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  border-bottom: #e6e6e6 solid 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 33px;
+    row-gap: 20px;
+  }
+
+  .site-list__link {
+    padding-top: 39px;
+    padding-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+
+    &--current {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    &--light .site-list__link {
+      color: #ffffff;
+
+      &--current {
+        border-color: #ffffff;
+      }
+    }
+  }
+
+  .site-list__link {
+    padding-top: 71px;
+
+    &--current {
+      border-color: $primary-color;
+    }
+  }
 }

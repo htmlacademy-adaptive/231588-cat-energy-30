@@ -14,20 +14,23 @@
 
     <header class="main-header">
 
-      <a class="main-header__logo logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_image-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_image-tablet.svg" width="60" height="50">
-          <img  class="logo__image" src="images/logo_image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
-      </a>
+      <div class="main-header__top">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_image-desktop.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_image-tablet.svg" width="60" height="50">
+            <img  class="logo__image" src="images/logo_image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </picture>
+          <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
+        </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-header__toggle toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list site-list--light">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--current" href="index.html" aria-current="page">Главная</a>
           </li>
@@ -46,18 +49,18 @@
 
       <section class="hero">
         <div class="hero__content">
-          <h1 class="hero__title main-title main-title--index">Функциональное питание для котов</h1>
+          <h1 class="hero__title main-title main-title--index">Функциональное<br>питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
         </div>
+        <a class="hero__button button" href="form.html">Подобрать программу</a>
         <picture>
           <source type="image/png" media="(min-width: 1440px)" srcset="images/index_can-desktop@1x.png 1x, images/index_can-desktop@2x.png 2x" width="552" height="499">
           <source type="image/png" media="(min-width: 768px)" srcset="images/index_can-tablet@1x.png 1x, images/index_can-tablet@2x.png 2x" width="709" height="609">
-          <img src="images/index_can-mobile@1x.png" srcset="images/index_can-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов">
+          <img class="hero__img" src="images/index_can-mobile@1x.png" srcset="images/index_can-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов">
         </picture>
-        <a class="hero__button button" href="form.html">Подобрать программу</a>
       </section>
 
-      <section class="target wrapper">
+      <section class="target">
         <ul class="target__list">
           <li class="target__list-item">
             <h2 class="target__title target__title--slim">Похудение</h2>
@@ -72,7 +75,7 @@
         </ul>
       </section>
 
-      <section class="advantages wrapper">
+      <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item advantages__list-item--nutrition">
@@ -109,15 +112,21 @@
         </div>
 
         <div class="review__slider slider">
-          <div class="slider__image">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
-              <img src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
-            </picture>
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" >
-              <img src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
-            </picture>
+          <div class="slider__images">
+            <div class="slider__images-wrapper">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__img slider__img--left" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
+              </picture>
+            </div>
+
+            <div class="slider__images-wrapper">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__img slider__img--right" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
+              </picture>
+            </div>
+
           </div>
           <button class="slider__swiper" type="button">
             <span class="visually-hidden">Влево-Вправо</span>
@@ -126,9 +135,9 @@
       </section>
 
       <section class="map">
-        <div class="map__information wrapper">
-          <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="map__information">
+          <h2 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="map__image">
           <picture>
@@ -142,8 +151,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper wrapper">
-
+      <div class="main-footer__wrapper">
         <a class="main-footer__logo logo" href="index.html">
           <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
         </a>
@@ -166,10 +174,9 @@
           </li>
         </ul>
 
-        <a class="coopyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-footer__coopyright coopyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="coopyright__text">HTML Academy</span>
         </a>
-
       </div>
     </footer>
 

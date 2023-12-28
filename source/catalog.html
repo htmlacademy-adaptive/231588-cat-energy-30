@@ -14,25 +14,28 @@
 
     <header class="main-header">
 
-      <a class="main-header__logo logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_image-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_image-tablet.svg" width="60" height="50">
-          <img  class="logo__image" src="images/logo_image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
-      </a>
+      <div class="main-header__top">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_image-desktop.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_image-tablet.svg" width="60" height="50">
+            <img  class="logo__image" src="images/logo_image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </picture>
+          <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
+        </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-header__toggle toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+
+      <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link  site-list__link--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -42,7 +45,7 @@
 
     </header>
 
-    <main class="catalog wrapper">
+    <main class="catalog">
       <h1 class="catalog__title main-title">Каталог продукции</h1>
 
       <section class="catalog__list">
@@ -267,60 +270,62 @@
       <section class="catalog-add">
         <h2 class="catalog-add__title">Дополнительные товары</h2>
 
-        <article class="catalog-add__item card-add">
-          <h3 class="card-add__title">Сахарозаменитель</h3>
-          <ul class="card-add__list">
-            <li class="card-add__list-item">
-              <span>1 упаковка (100 г)</span>
-              <span>200 ₽</span>
-            </li>
-          </ul>
-          <a class="catalog-add__button button" href="form.html">Заказать</a>
+        <div class="catalog-add__list">
+          <article class="catalog-add__item card-add">
+            <h3 class="card-add__title">Сахарозаменитель</h3>
+            <ul class="card-add__list">
+              <li class="card-add__list-item">
+                <span>1 упаковка (100 г)</span>
+                <span>200 ₽</span>
+              </li>
+            </ul>
+            <a class="catalog-add__button button" href="form.html">Заказать</a>
+          </article>
+
+          <article class="catalog-add__item card-add">
+            <h3 class="card-add__title">Питьевая вода</h3>
+            <ul class="card-add__list">
+              <li class="card-add__list-item">
+                <span>5 литров</span>
+                <span>50 ₽</span>
+              </li>
+            </ul>
+            <a class="catalog-add__button button" href="form.html">Заказать</a>
+          </article>
+
+          <article class="catalog-add__item card-add">
+            <h3 class="card-add__title">Молоко</h3>
+            <ul class="card-add__list">
+              <li class="card-add__list-item">
+                <span>1 литров</span>
+                <span>100 ₽</span>
+              </li>
+            </ul>
+            <a class="catalog-add__button button" href="form.html">Заказать</a>
+          </article>
+
+          <article class="catalog-add__item card-add">
+            <h3 class="card-add__title">Витамины</h3>
+            <ul class="card-add__list">
+              <li class="card-add__list-item">
+                <span>1 упаковка (30 г)</span>
+                <span>300 ₽</span>
+              </li>
+            </ul>
+            <a class="catalog-add__button button" href="form.html">Заказать</a>
+          </article>
+
+        </div>
+        <article class="catalog-add__gift gift">
+          <h2 class="visually-hidden">Акция: в подарок!</h2>
+          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
         </article>
 
-        <article class="catalog-add__item card-add">
-          <h3 class="card-add__title">Питьевая вода</h3>
-          <ul class="card-add__list">
-            <li class="card-add__list-item">
-              <span>5 литров</span>
-              <span>50 ₽</span>
-            </li>
-          </ul>
-          <a class="catalog-add__button button" href="form.html">Заказать</a>
-        </article>
-
-        <article class="catalog-add__item card-add">
-          <h3 class="card-add__title">Молоко</h3>
-          <ul class="card-add__list">
-            <li class="card-add__list-item">
-              <span>1 литров</span>
-              <span>100 ₽</span>
-            </li>
-          </ul>
-          <a class="catalog-add__button button" href="form.html">Заказать</a>
-        </article>
-
-        <article class="catalog-add__item card-add">
-          <h3 class="card-add__title">Витамины</h3>
-          <ul class="card-add__list">
-            <li class="card-add__list-item">
-              <span>1 упаковка (30 г)</span>
-              <span>300 ₽</span>
-            </li>
-          </ul>
-          <a class="catalog-add__button button" href="form.html">Заказать</a>
-        </article>
-
-      </section>
-
-      <section class="gift">
-        <h2 class="visually-hidden">Акция: в подарок!</h2>
-        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
 
       <section class="map">
         <div class="map__information">
-          <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="map__image">
@@ -335,7 +340,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper wrapper">
+      <div class="main-footer__wrapper">
 
         <a class="main-footer__logo logo" href="index.html">
           <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
@@ -359,9 +364,8 @@
           </li>
         </ul>
 
-        <a class="coopyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-footer__coopyright coopyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="coopyright__text">HTML Academy</span>
-          <img class="coopyright__logo" src="images/logo_html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
 
       </div>

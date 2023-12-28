@@ -1,48 +1,115 @@
 .form-group {
-  display: flex;
-  flex-direction: column;
+  @include container();
+  padding-bottom: 24px;
+
   border: none;
 }
 
 .form-group__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $paragraf-font-color;
 
+  &--radio {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
   &--textarea {
+    width: 100%;
+    min-height: 140px;
+
     font-family: $primary-font;
     font-size: 16px;
     font-style: normal;
     line-height: 18px;
     text-transform: uppercase;
+
+    border-radius: 0;
+  }
+
+  &--checkbox {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    & input {
+      flex-grow: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.form-group__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    font-size: 0;
+    top: 13px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+
+    background-color: $text-font-color;
+  }
+
+  & input {
+    width: 100%;
+  }
+
+  &--phone::after {
+    mask-image: url("../../images/icons/stack.svg#phone-stroke");
+  }
+
+  &--email::after {
+    mask-image: url("../../images/icons/stack.svg#email-stroke");
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+    border-radius: 0;
+  }
+
+  &:focus {
+    border: 2px solid $paragraf-font-color;
+    border-radius: 0;
+  }
+
+  &--error {
+    border: 2px solid $error-color;
+  }
+
+  &--error + span {
+    background-color: $error-color;
+  }
+
+  &:focus + span {
+    background-color: $primary-color;
   }
 }
 
 .form-group__item-input {
+  flex-grow: 1;
+  margin-left: 13px;
+  padding: 14px 15px 13px 15px;
+
   font-family: $primary-font;
   font-size: 16px;
   font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
 
-  // & {
-
-  //   position: absolute;
-  //   top: 13px;
-  //   right: 12px;
-  //   width: 20px;
-  //   height: 20px;
-
-  //   background-repeat: no-repeat;
-  // }
-
-  &--email {
-    background-image: url("../../images/icons/stack.svg#email-stroke");
-  }
-
-  &--name {
-    background-image: url("../../images/icons/stack.svg#email-stroke");
-  }
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
 }
 
 .form-group__item-input::placeholder {
@@ -52,6 +119,8 @@
 }
 
 .form-group__title {
+  padding-bottom: 35px;
+
   font-size: 24px;
   line-height: 26px;
   color: $text-font-color;
