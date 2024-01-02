@@ -3,12 +3,11 @@
 }
 
 .main-header__top {
-  @include container();
+  margin: 0 auto;
+  padding: 13px 20px 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
-  padding-top: 13px;
 
   border-bottom: #e6e6e6 solid 1px;
 }

@@ -3,8 +3,8 @@
 }
 
 .review__title {
-  @include container();
   margin: 0;
+  @include container();
   padding-top: 25px;
   margin-bottom: 40px;
   font-size: 36px;
