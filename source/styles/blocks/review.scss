@@ -49,9 +49,40 @@
     font-size: 60px;
     line-height: 60px;
   }
+  
+  .review__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    margin-bottom: 99px;
+  }
+
+  .review__stats-list {
+    grid-column: 1 / 3;
+    margin-bottom: 99px;
+  }
+
+  .review__stats-text {
+    width: 174px;
+    font-size: 20px;
+    grid-column: 4 / 5;
+
+    text-align: right;
+  }
+
+  .review__text {
+    margin-bottom: 55px;
+    grid-column: 1 / 5;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   .review__slider {
-    background-color: #eaeaea;
+    width: 100%;
+    margin: 0;
+
+    background: linear-gradient(to bottom,#ffffff 151px,#eaeaea 151px 384px);
   }
 }
 

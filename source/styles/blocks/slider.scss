@@ -69,3 +69,22 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .slider__images {
+    grid-template-columns: repeat(2, 278px);
+    justify-content: center;
+  }
+
+  .slider__swiper {
+    &::after {
+      top: 45%;
+      left: 48%;
+    }
+    
+    &::before {
+      height: 512px;
+      left: 50%;
+    }
+  }
+}
+
