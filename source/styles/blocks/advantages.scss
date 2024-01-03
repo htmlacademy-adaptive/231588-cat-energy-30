@@ -117,6 +117,17 @@
   }
 
   .advantages__list {
+    margin-bottom: 69px;
+    gap: 77px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .advantages__list-item {
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      right: 20px;
+    }
   }
 }

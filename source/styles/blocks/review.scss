@@ -88,9 +88,12 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    @include container();
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    grid-template-columns: 110px 610px 610px 110px;
+    grid-template-rows: 136px 462px;
+
+    background: linear-gradient(to bottom,#ffffff 136px,#eaeaea 136px 384px);
   }
 
   .review__title,
@@ -104,6 +107,19 @@
 
   .review__title {
     padding-bottom: 76px;
-    grid-column: span 2;
+    grid-column: 2 / 4;
+    grid-row: 1 / -1;
+  }
+
+  .review__stats {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+
+  .review__slider {
+    grid-column: 3 / 4;
+    background: none;
   }
 }
