@@ -12,15 +12,6 @@
   border-bottom: #e6e6e6 solid 1px;
 }
 
-
-.main-header__toggle {
-  width: 24px;
-  height: 2px;
-
-  background-color: $text-font-color;
-  border: none;
-}
-
 @media (min-width: $tablet-width) {
   .main-header {
     @include container();

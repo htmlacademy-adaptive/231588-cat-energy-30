@@ -1,0 +1,10 @@
+.toggle {
+  width: 24px;
+  height: 2px;
+
+  background-color: $text-font-color;
+  transform-origin: 4px 0px;
+
+  border: none;
+  box-shadow: 0 -7px $text-font-color, 0 7px $text-font-color;
+}

@@ -55,3 +55,20 @@
     box-shadow: 0 0 0 7px #ffffff;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .stats {
+    justify-content: flex-start;
+    gap: 42px;
+  }
+
+  .stats__item {
+    width: 162px;
+    margin-bottom: 55px;
+  }
+
+  .stats__comment {
+    background-color: #eaeaea;
+    box-shadow: 0 0 0 7px #eaeaea;
+  }
+}
