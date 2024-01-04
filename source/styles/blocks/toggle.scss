@@ -1,10 +1,65 @@
 .toggle {
-  width: 24px;
-  height: 2px;
-
-  background-color: $text-font-color;
-  transform-origin: 4px 0px;
-
+  position: relative;
   border: none;
-  box-shadow: 0 -7px $text-font-color, 0 7px $text-font-color;
+
+  &--open {
+    width: 24px;
+    height: 2px;
+
+    background-color: $text-font-color;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        top: -7px;
+        left: 0;
+        transition: 0.5s;
+
+        background-color: $text-font-color;
+    }
+
+    &::before {
+      top: 7px;
+    
+      background-color: $text-font-color;
+    }
+  }
+
+  &--close {
+    width: 24px;
+    height: 2px;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      left: 0;
+      top: 0;
+      transition: 0.5s;
+
+      background-color: $text-font-color;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+  }
+  
+
+  &--nojs {
+    display: none;
+  }
 }
