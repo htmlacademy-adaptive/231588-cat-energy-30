@@ -1,5 +1,6 @@
 .card-add__title {
   margin: 0;
+  padding-bottom: 13px;
 
   font-size: 16px;
   font-weight: 400;
@@ -10,6 +11,7 @@
 
 .card-add__list {
   @include list();
+  padding-bottom: 15px;
 }
 
 .card-add__list-item span {

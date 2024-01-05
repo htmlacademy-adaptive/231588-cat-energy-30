@@ -1,25 +1,22 @@
-.card__title {
-  @include link();
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #222222;
-
-  & h2 {
-    margin: 0;
-    font-weight: 400;
-  }
-}
-
 .card {
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 20px;
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  row-gap: 17px;
+
   &:last-child {
-    padding-top: 25px;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 0;
   }
 
   &:last-child .card__title {
     position: relative;
+    grid-column: 2 / 4;
+    grid-row: 1;
     margin: 0;
-    padding-top: 23px;
+    padding-top: 48px;
+    padding-bottom: 8px;
 
     font-weight: 400;
     text-align: center;
@@ -29,7 +26,7 @@
   &:last-child .card__title::before {
     content: "";
     position: absolute;
-    top: -23px;
+    top: 0;
     left: 45%;
     width: 30px;
     height: 30px;
@@ -37,9 +34,52 @@
     background-image: url("../../images/icons/stack.svg#plus");
     background-repeat: no-repeat;
   }
+
+  &:last-child .card__button {
+    grid-row: 3;
+  }
+}
+
+.card__image {
+  grid-column: 2 / 3;
+  grid-row: 1;
+
+  text-align: center;
+}
+
+.card__content {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+
+.card__button {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.card__title {
+  @include link();
+
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #222222;
+  cursor: pointer;
+
+  & h2 {
+    padding-bottom: 14px;
+    margin: 0;
+    font-weight: 400;
+  }
 }
 
 .card__text {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  margin: 0;
+  padding-bottom: 21px;
+
+  text-align: center;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
@@ -48,9 +88,13 @@
 
 .card__list {
   @include list();
+  width: 140px;
 }
 
 .card__list-item {
+  display: flex;
+  justify-content: space-between;
+
   text-align: center;
   font-family: $secondary-font;
   font-size: 12px;

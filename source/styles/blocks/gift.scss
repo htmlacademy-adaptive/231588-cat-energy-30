@@ -1,5 +1,6 @@
 .gift {
   display: flex;
+  align-items: center;
   flex-direction: column-reverse;
   min-height: 290px;
 
@@ -9,9 +10,11 @@
 }
 
 .gift__text {
+  width: 161px;
   position: relative;
   margin: 0;
   padding-top: 80px;
+  padding-bottom: 43px;
 
   font-family: $secondary-font;
   text-align: center;
@@ -22,8 +25,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: -100px;
-    left: 101px;
+    top: -53px;
+    left: 25%;
     width: 78px;
     height: 80px;
 

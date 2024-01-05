@@ -3,13 +3,28 @@
 }
 
 .catalog-add__title {
+  width: fit-content;
+  position: relative;
   margin: 0;
   padding-bottom: 36px;
 
   font-size: 24px;
   font-weight: 400;
 
-  border-bottom: 1px solid #cdcdcd;
+  background: #ffffff;
+  box-shadow: -20px 0 0 #ffffff, 20px 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+    box-shadow: 100vw 0 0 $primary-color;
+    z-index: -1;
+  }
 }
 
 .catalog-add__item {
@@ -17,6 +32,10 @@
   padding-bottom: 19px;
 
   border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .catalog-add__list {
