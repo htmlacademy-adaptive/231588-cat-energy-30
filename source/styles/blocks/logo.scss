@@ -6,6 +6,14 @@
 
 .logo__text {
   margin-left: 56px;
+
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -34,3 +34,26 @@
     z-index: 4;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    min-height: 200px;
+    padding-right: 125px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: normal;
+
+    background-position-y: 61%;
+  }
+
+  .gift__text {
+    width: 161px;
+    padding-top: 71px;
+    text-align: left;
+
+    &::before {
+      top: 57px;
+      left: -304px;
+    }
+  }
+}

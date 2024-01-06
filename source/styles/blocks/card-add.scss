@@ -14,9 +14,56 @@
   padding-bottom: 15px;
 }
 
-.card-add__list-item span {
-  font-family: $secondary-font;
-  text-align: center;
-  line-height: 14px;
-  color: $paragraf-font-color;
+.card-add__list-item {
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: $paragraf-font-color;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .card-add {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 38px 28px 38px;
+
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .card-add__title {
+    padding-bottom: 25px;
+
+    font-size: 20px;
+  }
+
+  .card-add__button {
+    grid-column: span 2;
+  }
+
+  .card-add__list {
+    text-align: right;
+  }
+
+  .card-add__list-item {
+    display: block;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    & span:first-child {
+      padding-right: 49px;
+    }
+  }
 }
