@@ -187,3 +187,18 @@
     width: 250px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 245px;
+    padding: 10px 38px 40px;
+  }
+
+  .card__list {
+    width: 169px;
+  }
+
+  .card__button {
+    width: 169px;
+  }
+}

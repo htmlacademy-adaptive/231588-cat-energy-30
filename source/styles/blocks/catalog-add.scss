@@ -63,9 +63,11 @@
   .catalog-add {
     display: grid;
     justify-content: space-between;
+    column-gap: 81px;
   }
 
   .catalog-add__list {
+    margin-bottom: 0;
     grid-column: span 3;
   }
 
@@ -82,10 +84,11 @@
     grid-column: span 4;
 
     border: none;
+    box-shadow: -40px 0 0#fff,40px 0 0#fff;
   }
 
   .catalog-add__gift {
+    margin-bottom: 0;
     width: 245px;
-    height: 288px;
   }
 }

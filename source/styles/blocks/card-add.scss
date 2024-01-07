@@ -67,3 +67,39 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card-add {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 17px;
+
+    border: 0;
+    border-top: 1px solid #cdcdcd;
+  } 
+
+  .card-add__title {
+    padding-bottom: 0;
+
+    line-height: 20px;
+  }
+
+  .card-add__list {
+    padding-bottom: 0;
+    margin-right: 40px;
+
+    line-height: 20px;
+  }
+
+  .card-add__list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+  }
+
+  .card-add__button {
+    width: 244px;
+    grid-column: 3;
+  }
+}
