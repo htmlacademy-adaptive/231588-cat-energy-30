@@ -1,0 +1,29 @@
+.second-title {
+  width: fit-content;
+  position: relative;
+  margin: 0;
+  background: #ffffff;
+  box-shadow: -20px 0 0 #ffffff, 20px 0 0 #ffffff;
+  
+  &--line::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+    box-shadow: 100vw 0 0 $primary-color;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .second-title {
+    box-shadow: -40px 0 0#fff,40px 0 0#fff;
+
+    &--line::before {
+      top: 22px;
+    }
+  }
+}

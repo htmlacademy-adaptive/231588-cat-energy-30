@@ -55,6 +55,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__title {
+    padding-left: 110px;
+  }
   .catalog__list {
     @include container();
     margin-bottom: 76px;

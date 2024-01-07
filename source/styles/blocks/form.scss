@@ -19,6 +19,9 @@
 }
 
 .form__item {
+  padding: 0 20px;
+  margin: 0;
+
   &--anketa {
     border-bottom: 1px solid #d9d9d9;
   }
@@ -30,6 +33,10 @@
 
     border-bottom: 1px solid #d9d9d9;
   }
+
+  &--checkbox {
+    margin-bottom: 14px;
+  }
 }
 
 .form__bottom {
@@ -39,42 +46,90 @@
 
 .form__bottom-btn {
   width: 100%;
+  margin-bottom: 21px;
 }
 
 .form__bottom-text {
   display: block;
   text-align: center;
+
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .form__title {
+    width: 628px;
+    padding: 0 auto;
+    margin: 0 auto;
     margin-bottom: 54px;
   }
 
   .form__text {
+    width: 628px;
+    padding: 0 auto;
+    margin: 0 auto;
     margin-bottom: 66px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
+  .form__items-wrapper {
+    width: 628px;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+
   .form__item {
     border: none;
 
+    &--anketa {
+      margin-bottom: 52px;
+    }
+
     &--radio {
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
+      padding-top: 23px;
+      padding-left: 27px;
+      margin-bottom: 65px;
+      
+
       border: 1px solid #e7e7e7;
     }
 
     &--checkbox {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      width: 628px;
+      padding: 0 auto;
+      margin: 0 auto;
+      margin-bottom: 52px;
+    }
+
+    &--contacts {
+      width: 628px;
+      padding: 0 auto;
+      margin: 0 auto;
+      margin-bottom: 65px;
+    }
+
+    &--comments {
+      width: 628px;
+      padding: 0 auto;
+      margin: 0 auto;
+      margin-bottom: 65px;
     }
   }
 
   .form__bottom {
     display: flex;
+    align-items: baseline;
+    column-gap: 60px;
+    width: 628px;
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-bottom: 39px;
   }
 
   .form__bottom-btn {
@@ -89,6 +144,16 @@
     }
   }
 
+  .form__title {
+    @include container();
+    margin-bottom: 55px;
+  }
+
+  .form__text {
+    @include container();
+    margin-bottom: 66px;
+  }
+
   .form__items {
     margin-bottom: 79px;
   }
@@ -100,9 +165,8 @@
     gap: 80px;
     margin-bottom: 80px;
 
-    & fieldset {
+    & .form__item {
       width: auto;
-      padding: 0;
       margin: 0;
       flex-grow: 1;
     }
@@ -112,22 +176,38 @@
     margin-bottom: 72px;
 
     &--contacts {
+      @include container();
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
       gap: 80px;
+      margin-bottom: 70px;
 
       & label {
         flex-grow: 1;
       }
     }
 
+    &--radio {
+      padding-top: 25px;
+      padding-left: 28px;
+    }
+
+    &--comments {
+      @include container();
+      margin-bottom: 70px;
+    }
+
     &--checkbox {
+      @include container();
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 60px;
     }
   }
 
-  .form__bottom-btn {
-    margin-right: 80px;
+  .form__bottom {
+    @include container();
+    margin-bottom: 79px;
+    column-gap: 80px;
   }
 }
