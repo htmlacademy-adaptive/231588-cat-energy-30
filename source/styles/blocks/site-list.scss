@@ -17,6 +17,14 @@
   text-transform: uppercase;
 
   border-bottom: #e6e6e6 solid 1px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -47,6 +55,14 @@
     &--light .site-list__link {
       color: #ffffff;
 
+      &:hover {
+        opacity: 0.6;
+      }
+    
+      &:active {
+        opacity: 0.3;
+      }
+
       &--current {
         border-color: #ffffff;
       }
@@ -55,7 +71,7 @@
 
   .site-list__link {
     padding-top: 71px;
-    
+
     font-size: 20px;
 
     &--current {

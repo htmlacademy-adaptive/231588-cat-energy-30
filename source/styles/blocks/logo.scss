@@ -2,17 +2,25 @@
   @include link();
   display: flex;
   align-items: center;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__text {
   margin-left: 56px;
 
   &:hover {
-    fill: #3e3e3e;
+    opacity: 0.8;
   }
 
   &:active {
-    fill: #6b6b6b;
+    opacity: 0.6;
   }
 }
 

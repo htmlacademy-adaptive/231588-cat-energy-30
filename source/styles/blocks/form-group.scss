@@ -10,6 +10,7 @@
 .form-group__item {
   display: flex;
   justify-content: space-between;
+  gap: 13px;
   align-items: center;
   margin-bottom: 14px;
 
@@ -41,6 +42,14 @@
       &:disabled {
         opacity: 0.3;
       }
+    }
+
+    &:hover input {
+      border: 1px solid #bababa;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -94,6 +103,14 @@
         opacity: 0.3;
       }
     }
+
+    &:hover input {
+      border: 1px solid #bababa;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -125,31 +142,17 @@
     mask-image: url("../../images/icons/stack.svg#email-stroke");
   }
 
-  &:hover input {
-    border-color: #cdcdcd;
-    border-radius: 0;
-  }
-
-  &:focus input {
-    border: 2px solid $paragraf-font-color;
-    border-radius: 0;
-  }
-
-  &--error input {
-    border: 2px solid $error-color;
-  }
-
-  &--error input {
-    background-color: $error-color;
-  }
-
-  &:focus::after{
+  &:focus::after {
     background-color: $primary-color;
+  }
+
+  &--error::after {
+    background-color: $error-color;
   }
 }
 
 .form-group__item-input {
-  margin-left: 13px;
+  flex-grow: 1;
   padding: 14px 15px 13px 15px;
 
   font-family: $primary-font;
@@ -160,13 +163,28 @@
 
   border: 1px solid #e7e7e7;
   border-radius: 0;
+
+  &::placeholder {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $paragraf-font-color;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+    border-radius: 0;
+  }
+
+  &:focus {
+    outline: 2px solid $paragraf-font-color;
+    border-radius: 0;
+  }
+
+  &--error {
+    outline: 2px solid $error-color;
+  }
 }
 
-.form-group__item-input::placeholder {
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $paragraf-font-color;
-}
 
 .form-group__title {
   padding-bottom: 38px;
@@ -179,6 +197,10 @@
 @media (min-width: $tablet-width) {
   .form-group__item-input {
     flex-grow: 1;
+  }
+
+  .form-group__title br {
+    display: none;
   }
 }
 
