@@ -56,15 +56,17 @@
 
 @media (min-width: $desktop-width) {
   .catalog__title {
-    padding-left: 110px;
+    @include container();
+    padding-bottom: 84px;
   }
+  
   .catalog__list {
     @include container();
     margin-bottom: 76px;
     padding-left: 0;
     padding-right: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 63px 80px;
+    margin-bottom: 76px;
   }
 
   .catalog {
