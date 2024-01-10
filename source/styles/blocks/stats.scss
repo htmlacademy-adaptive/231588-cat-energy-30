@@ -6,10 +6,8 @@
 }
 
 .stats__item {
-  position: relative;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 18px;
 
   text-align: center;
 
@@ -18,22 +16,22 @@
 }
 
 .stats__number {
+  display: block;
+  
   text-align: center;
   font-size: 24px;
 }
 
 .stats__comment {
-  position: absolute;
-  width: 77px;
-  top: 46px;
-  left: 18%;;
+  display: inline-block;
+  transform: translateY(9px);
 
-  text-align: center;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
   color: $paragraf-font-color;
   background-color: #eaeaea;
+  box-shadow: -5px 0 0 #eaeaea,5px 0 0 #eaeaea;;
 }
 
 

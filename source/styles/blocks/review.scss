@@ -17,6 +17,11 @@
   @include container();
 }
 
+.review__slider {
+  margin: 0 auto;
+  width: 280px;
+}
+
 .review__text {
   margin: 0;
   margin-bottom: 20px;

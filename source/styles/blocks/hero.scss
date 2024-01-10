@@ -34,9 +34,9 @@
 }
 
 .hero__button {
-  width: 280px;
   display: block;
-  margin: 0 auto;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 138px;
   padding: 10px 44px;
 }
@@ -80,6 +80,7 @@
   }
 
   .hero__button {
+    width: 244px;
     margin-top: 0;
     margin-left: 100px;
     padding: 14px 26px;
