@@ -103,14 +103,15 @@
       &:disabled {
         opacity: 0.3;
       }
-    }
 
-    &:hover input {
-      border: 1px solid #bababa;
-    }
-
-    &:active {
-      opacity: 0.3;
+      &:hover {
+        border: 1px solid #bababa;
+        outline: none;
+      }
+  
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -178,11 +179,13 @@
 
   &:focus {
     outline: 2px solid $paragraf-font-color;
+    border: none;
     border-radius: 0;
   }
 
   &--error {
     outline: 2px solid $error-color;
+    border: none;
   }
 }
 

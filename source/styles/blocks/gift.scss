@@ -7,6 +7,11 @@
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image_gift-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $primary-color;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image_gift-mobile@2x.jpg");
+  }
 }
 
 .gift__text {

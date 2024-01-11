@@ -54,6 +54,10 @@
         </div>
         <a class="hero__button button" href="form.html">Подобрать программу</a>
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/index_can-desktop@1x.webp 1x, images/index_can-desktop@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/index_can-tablet@1x.webp 1x, images/index_can-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="images/index_can-mobile@1x.webp 1x, images/index_can-mobile@2x.webp 2x">
+
           <source type="image/png" media="(min-width: 1440px)" srcset="images/index_can-desktop@1x.png 1x, images/index_can-desktop@2x.png 2x" width="552" height="499">
           <source type="image/png" media="(min-width: 768px)" srcset="images/index_can-tablet@1x.png 1x, images/index_can-tablet@2x.png 2x" width="709" height="609">
           <img class="hero__img" src="images/index_can-mobile@1x.png" srcset="images/index_can-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов">
@@ -65,12 +69,12 @@
           <li class="target__list-item">
             <h2 class="target__title target__title--slim">Похудение</h2>
             <p class="target__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="target__link" href="#">Каталог SLIM</a>
+            <a class="target__link" href="catalog-slim.html">Каталог SLIM</a>
           </li>
           <li class="target__list-item">
             <h2 class="target__title target__title--pro">Набор массы</h2>
             <p class="target__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="target__link" href="#">Каталог PRO</a>
+            <a class="target__link" href="catalog-pro.html">Каталог PRO</a>
           </li>
         </ul>
       </section>
@@ -115,6 +119,9 @@
           <div class="slider__images">
             <div class="slider__images-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.webp 1x, images/cat_fat-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat_fat-mobile@1x.webp 1x, images/cat_fat-mobile@2x.webp 2x">
+
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__img slider__img--left" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
               </picture>
@@ -122,6 +129,9 @@
 
             <div class="slider__images-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.webp 1x, images/cat_slim-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat_slim-mobile@1x.webp 1x, images/cat_slim-mobile@2x.webp 2x">
+
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__img slider__img--right" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
               </picture>
@@ -144,6 +154,10 @@
            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Наши координаты"></iframe>
           <noscript>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+              <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+
               <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
               <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
               <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" >
@@ -161,18 +175,18 @@
         </a>
 
         <ul class="main-footer__socials socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="#">
+          <li class="socials__item socials__item--vk">
+            <a class="socials__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#">
+          <li class="socials__item socials__item--youtube">
+            <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в YouTube</span>
             </a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--telegram" href="#">
+          <li class="socials__item socials__item--telegram">
+            <a class="socials__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Telegram</span>
             </a>
           </li>

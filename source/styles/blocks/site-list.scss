@@ -9,12 +9,12 @@
 .site-list__link {
   @include link();
   display: block;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 22px 10px 24px 10px;
 
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 
   border-bottom: #e6e6e6 solid 1px;
 

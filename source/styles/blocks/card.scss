@@ -71,6 +71,11 @@
     margin: 0;
     font-weight: 400;
   }
+
+  &:hover h2,
+  &:active h2 {
+    opacity: 0.6;
+  }
 }
 
 .card__text {
@@ -99,6 +104,13 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
+}
+
+.card__image {
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
