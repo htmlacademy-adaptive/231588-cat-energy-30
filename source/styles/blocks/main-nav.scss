@@ -26,3 +26,9 @@
     }
   }
 }
+
+@media (min-height: $tablet-width) {
+  .main-nav {
+    flex-grow: 1;
+  }
+}

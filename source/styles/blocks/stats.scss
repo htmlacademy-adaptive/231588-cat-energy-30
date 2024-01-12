@@ -7,6 +7,7 @@
 
 .stats__item {
   width: 100%;
+  height: 56px;
   padding-top: 15px;
 
   text-align: center;
@@ -23,8 +24,9 @@
 }
 
 .stats__comment {
+  width: 77px;
   display: inline-block;
-  transform: translateY(9px);
+  transform: translateY(7px);
 
   font-family: $secondary-font;
   font-size: 12px;
@@ -36,6 +38,16 @@
 
 
 @media (min-width: $tablet-width) {
+  .stats {
+    justify-content: flex-start;
+    gap: 43px;
+  }
+
+  .stats__item {
+    width: 162px;
+    height: 72px; 
+  }
+
   .stats__number {
     font-size: 30px;
     line-height: 37px;

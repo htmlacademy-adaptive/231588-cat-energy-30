@@ -6,6 +6,7 @@
 
 .form__text {
   @include container();
+  margin: 0;
   margin-bottom: 39px;
   line-height: 18px;
   text-transform: uppercase;
@@ -22,19 +23,25 @@
   margin: 0;
 
   &--anketa {
+    padding-bottom: 10px;
+
     border-bottom: 1px solid #d9d9d9;
   }
 
   &--radio {
     margin-bottom: 26px;
     padding-top: 22px;
-    padding-bottom: 19px;
+    padding-bottom: 8px;
 
     border-bottom: 1px solid #d9d9d9;
   }
 
+  &--contacts {
+    padding-bottom: 10px;
+  }
+
   &--checkbox {
-    margin-bottom: 14px;
+    margin-bottom: 24px;
   }
 }
 
@@ -52,6 +59,7 @@
   display: block;
   text-align: center;
 
+  font-family: $secondary-font;
   line-height: 16px;
 }
 

@@ -9,7 +9,7 @@
 
 .target__list-item {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   background-color: $basic-text-background;
 }
@@ -17,7 +17,7 @@
 .target__title {
   position: relative;
   margin: 0;
-  padding: 10px 0 25px 70px;
+  padding: 10px 0 28px 70px;
 
   font-size: 24px;
   font-weight: 400;
@@ -53,7 +53,7 @@
 .target__text {
   margin: 0;
   padding-bottom: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 
   font-family: $secondary-font;
   line-height: 18px;
@@ -101,31 +101,36 @@
   }
   
   .target__title {
-    padding-left: 0;
+    padding: 20px 20px 24px 0;
 
     font-size: 36px;
     line-height: 36px;
 
     &::before {
       width: 200px;
-      height: 200px;
+      height: 211px;
       left: unset;
       right: 43px;
+      top: 23px;
     }
 
     &--pro::before {
       width: 268px;
-      right: 8px;
+      height: 200px;
+      right: 9px;
+      top: 34px;
     }
   }
 
   .target__list-item {
     margin-bottom: 30px;
-    padding: 57px 20px 57px 52px;
+    padding: 57px 20px 65px 52px;
   }
 
   .target__text {
     max-width: 340px;
+    margin: 0;
+    padding-bottom: 58px;
 
     font-size: 16px;
     line-height: 24px;
@@ -133,6 +138,8 @@
   }
 
   .target__link {
+    gap: 26px;
+
     font-size: 20px;
   }
   
