@@ -18,6 +18,16 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .second-title {
+    box-shadow: -40px 0 0#fff,40px 0 0#fff;
+    
+    &--line::before {
+      top: 24px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .second-title {
     box-shadow: -40px 0 0#fff,40px 0 0#fff;

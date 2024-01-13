@@ -198,13 +198,63 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-group__item-input {
-    flex-grow: 1;
+  .form-group__item {
+    margin-bottom: 20px;
+    gap: 14px;
+
+    font-size: 20px;
+
+    &--radio {
+      gap: 19px;
+      margin-bottom: 13px;
+
+      & input {
+        width: 40px;
+        height: 40px;
+        padding-top: 22px;
+      }
+
+      & input:checked {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &--checkbox {
+      gap: 21px;
+      margin-bottom: 32px;
+
+      & input,
+        input:checked {
+          width: 40px;
+          height: 40px;
+      }
+    }
+
+    &--textarea {
+      min-height: 175px;
+      padding-top: 16px;
+      padding-left: 20px;
+    }
   }
 
-  .form-group__title br {
-    display: none;
+  .form-group__item-input {
+    flex-grow: 1;
+    padding: 10px 19px 10px;
+
+    font-size: 20px;
   }
+
+  .form-group__title {
+    padding-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+  }
+
 }
 
 @media (min-width: $desktop-width) {

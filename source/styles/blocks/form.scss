@@ -65,9 +65,10 @@
 
 @media (min-width: $tablet-width) {
   .form__title {
-    margin-bottom: 54px;
+    margin-bottom: 17px;
     padding-left: 70px;
     padding-right: 70px;
+    padding-top: 0;
   }
 
   .form__text {
@@ -93,10 +94,7 @@
     }
 
     &--radio {
-      padding-left: 70px;
-      padding-right: 70px;
-      padding-top: 23px;
-      padding-left: 27px;
+      padding: 23px 70px 12px 27px;
       margin-bottom: 65px;
       
 
@@ -106,22 +104,30 @@
     &--checkbox {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
       width: 628px;
-      padding: 0 auto;
       margin: 0 auto;
-      margin-bottom: 52px;
+      margin-bottom: 20px;
+
+      & .form-group__title {
+        padding-bottom: 57px;
+      }
     }
 
     &--contacts {
       padding-left: 70px;
       padding-right: 70px;
-      margin-bottom: 65px;
+      margin-bottom: 44px;
     }
 
     &--comments {
       padding-left: 70px;
       padding-right: 70px;
-      margin-bottom: 65px;
+      margin-bottom: 45px;
+
+      & .form-group__title {
+        padding-bottom: 88px;
+      }
     }
   }
 
@@ -130,13 +136,17 @@
     align-items: baseline;
     column-gap: 60px;
     width: 628px;
-    padding: 0 auto;
     margin: 0 auto;
     margin-bottom: 39px;
+    padding-left: 0;
   }
 
   .form__bottom-btn {
     width: 284px;
+  }
+
+  .form__bottom-text {
+    font-size: 16px;
   }
 }
 

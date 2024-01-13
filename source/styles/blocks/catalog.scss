@@ -27,8 +27,9 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    margin-bottom: 74px;
+    margin-bottom: 43px;
     padding-left: 30px;
+    padding-top: 0;
 
     border: none;
   }
@@ -40,7 +41,7 @@
     gap: 60px;
     padding-left: 30px;
     padding-right: 30px;
-    margin: 0 auto 70px;
+    margin: 0 auto 60px;
   }
 
   .catalog__item {

@@ -32,10 +32,15 @@
 
 @media (min-width: $tablet-width) {
   .catalog-add__title {
+    margin-left: 40px;
     padding-bottom: 80px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .catalog-add__list {
+    margin-bottom: 69px;
   }
 
   .catalog-add__gift {
