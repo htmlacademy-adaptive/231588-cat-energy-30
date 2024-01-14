@@ -159,7 +159,7 @@
 
   .form__title {
     @include container();
-    margin-bottom: 55px;
+    margin-top: 10px;
   }
 
   .form__text {
@@ -168,7 +168,7 @@
   }
 
   .form__items {
-    margin-bottom: 79px;
+    margin-bottom: 58px;
   }
 
   .form__items-wrapper {
@@ -176,7 +176,7 @@
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     & .form__item {
       width: auto;
@@ -188,39 +188,58 @@
   .form__item {
     margin-bottom: 72px;
 
+    &--anketa {
+      flex-basis: 50%;
+    }
+
     &--contacts {
       @include container();
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
       gap: 80px;
-      margin-bottom: 70px;
+      margin-bottom: 51px;
 
       & label {
-        flex-grow: 1;
+        flex-basis: 50%;
       }
     }
 
     &--radio {
+      flex-basis: 50%;
+      height: 196px;
       padding-top: 25px;
       padding-left: 28px;
     }
 
     &--comments {
       @include container();
-      margin-bottom: 70px;
+      margin-bottom: 52px;
+
+      & .form-group__title {
+        padding-bottom: 0;
+      }
     }
 
     &--checkbox {
       @include container();
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-bottom: 60px;
+      gap: 80px;
+      margin-bottom: 28px;
+
+      & .form-group__title {
+        padding-bottom: 0;
+        margin-bottom: 57px;
+      }
     }
   }
 
   .form__bottom {
     @include container();
-    margin-bottom: 79px;
     column-gap: 80px;
+  }
+
+  .form__bottom-btn {
+    width: 570px;
   }
 }

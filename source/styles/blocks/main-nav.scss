@@ -32,3 +32,9 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-grow: 0;
+  }
+}
