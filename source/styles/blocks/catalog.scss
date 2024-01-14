@@ -58,16 +58,16 @@
 @media (min-width: $desktop-width) {
   .catalog__title {
     @include container();
-    padding-bottom: 84px;
+    padding-bottom: 40px;
+    padding-top: 10px;
   }
   
   .catalog__list {
     @include container();
-    margin-bottom: 76px;
+    margin-bottom: 67px;
     padding-left: 0;
     padding-right: 0;
     gap: 63px 80px;
-    margin-bottom: 76px;
   }
 
   .catalog {

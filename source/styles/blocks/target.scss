@@ -162,8 +162,8 @@
     &--pro::before {
       width: 134px;
       height: 100px;
-      top: 30px;
-      left: -15px;
+      top: 27px;
+      left: -17px;
     }
   }
 
@@ -175,10 +175,12 @@
 
   .target__list-item {
     flex-basis: 50%;
-    padding: 20px 67px 59px 52px;
+    padding: 20px 65px 65px 52px;
   }
 
   .target__text {
-    max-width: 457px;
+    max-width: unset;
+    width: 100%;
+    padding-bottom: 34px;
   }
 }

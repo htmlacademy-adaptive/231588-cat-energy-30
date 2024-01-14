@@ -116,3 +116,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .slider__images {
+    margin-left: 50px;
+  }
+
+  .slider__swiper {
+    left: 54%;
+  }
+}
+

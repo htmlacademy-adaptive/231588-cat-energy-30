@@ -75,7 +75,7 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0 17px;
+    padding: 14px 0 17px;
 
     border: 0;
     border-top: 1px solid #cdcdcd;
@@ -103,5 +103,10 @@
   .card-add__button {
     width: 244px;
     grid-column: 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 }

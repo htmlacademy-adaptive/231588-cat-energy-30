@@ -103,7 +103,6 @@
     justify-content: center;
     grid-template-columns: 110px 610px 610px 110px;
     grid-template-rows: 136px 462px;
-    padding-bottom: 75px;
 
     background: linear-gradient(to bottom,#ffffff 136px,#eaeaea 136px 384px);
   }
@@ -133,10 +132,14 @@
   .review__stats-text {
     width: 100%;
     text-align: left;
+
+    & span {
+      padding-left: 62px;
+    }
   }
 
   .review__text {
-    max-width: 436px;
+    max-width: 432px;
     padding-top: 70px;
     margin-bottom: 69px;
   }

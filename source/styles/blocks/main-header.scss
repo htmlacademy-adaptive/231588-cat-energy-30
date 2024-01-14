@@ -38,6 +38,8 @@
 
 @media (min-width: $desktop-width) {
   .main-header__logo {
+    margin-top: 30px;
+
     & .logo__text {
       width: 118px;
       height: 21px;

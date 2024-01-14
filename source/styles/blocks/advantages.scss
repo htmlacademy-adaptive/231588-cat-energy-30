@@ -114,12 +114,13 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
+    @include container();
     border: none;
   }
 
   .advantages__list {
-    margin-bottom: 69px;
-    gap: 77px;
+    margin-bottom: 20px;
+    gap: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
@@ -128,7 +129,7 @@
     line-height: 24px;
 
     &::after {
-      right: 20px;
+      right: 0;
     }
   }
 }

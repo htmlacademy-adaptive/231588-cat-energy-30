@@ -98,8 +98,7 @@
   .hero {
     @include container();
     position: unset;
-    min-height: 470px;
-    margin-bottom: 82px;
+    min-height: 597px;
 
     &::after {
       content: "";
@@ -118,6 +117,16 @@
 
   .hero__content {
     padding-left: 80px;
+  }
+
+  .hero__title {
+    padding-top: 45px;
+    padding-left: 0;
+  }
+
+  .hero__text {
+    padding-left: 0;
+    margin-bottom: 52px;
   }
 
   .hero__button {

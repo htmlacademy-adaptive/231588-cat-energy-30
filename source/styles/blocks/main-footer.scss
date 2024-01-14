@@ -62,6 +62,10 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    padding: 66px 0;
+    padding: 51px 0 70px 0;
+  }
+
+  .main-footer__logo {
+    padding-bottom: 0;
   }
 }

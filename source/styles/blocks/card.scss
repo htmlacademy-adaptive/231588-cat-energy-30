@@ -217,11 +217,43 @@
     padding: 10px 38px 40px;
   }
 
+  .card__image {
+    padding-bottom: 7px;
+  }
+
+  .card__content {
+    margin-bottom: 34px;
+  }
+
+  .card__title {
+    padding-bottom: 18px;
+  }
+
   .card__list {
     width: 169px;
   }
 
+  .card__list-item {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
   .card__button {
     width: 169px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card {
+    &:last-child .card__title {
+      padding-top: 140px;
+    }
+
+    &:last-child .card__text {
+      padding-bottom: 92px;
+    }
   }
 }

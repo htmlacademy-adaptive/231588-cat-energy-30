@@ -76,11 +76,21 @@
   .map__information {
     content: "";
     position: absolute;
+    padding-left: 80px;
+    padding-right: 80px;
     top: 95px;
     left: 110px;
     width: 565px;
     height: 199px;
 
     background-color: #ffffff;
+  }
+
+  .map__address {
+    text-align: left;
+  }
+
+  .map__image iframe {
+    height: 400px;
   }
 }

@@ -74,10 +74,12 @@
 
   .stats__item {
     width: 162px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .stats__comment {
+    transform: translateY(5px);
+
     background-color: #eaeaea;
     box-shadow: 0 0 0 7px #eaeaea;
   }
