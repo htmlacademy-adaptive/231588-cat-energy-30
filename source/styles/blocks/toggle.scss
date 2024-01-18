@@ -7,7 +7,6 @@
     height: 2px;
 
     background-color: $text-font-color;
-    cursor: pointer;
 
     &::after,
     &::before {
@@ -34,7 +33,6 @@
     height: 2px;
 
     background-color: transparent;
-    cursor: pointer;
 
     &::after,
     &::before {

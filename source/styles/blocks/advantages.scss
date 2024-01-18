@@ -71,7 +71,7 @@
     margin-bottom: 0;
     display: grid;
     justify-content: start;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 37px 60px;
 
     counter-reset: advantages-counter;
@@ -118,10 +118,14 @@
     border: none;
   }
 
+  .advantages__title {
+    padding-bottom: 68px;
+  }
+
   .advantages__list {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     gap: 80px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .advantages__list-item {
@@ -129,7 +133,12 @@
     line-height: 24px;
 
     &::after {
-      right: 0;
+      right: -4px;
+      top: -39px;
+    }
+
+    &--nutrition::after {
+      right: 19px;
     }
   }
 }

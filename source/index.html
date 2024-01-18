@@ -49,7 +49,7 @@
 
     <main class="main-container">
 
-      <section class="hero">
+      <section class="main-container__hero hero">
         <div class="hero__content">
           <h1 class="hero__title main-title main-title--index">Функциональное<br>питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
@@ -59,14 +59,13 @@
           <source type="image/webp" media="(min-width: 1440px)" srcset="images/index_can-desktop@1x.webp 1x, images/index_can-desktop@2x.webp 2x" width="552" height="499">
           <source type="image/webp" media="(min-width: 768px)" srcset="images/index_can-tablet@1x.webp 1x, images/index_can-tablet@2x.webp 2x" width="709" height="609">
           <source type="image/webp" srcset="images/index_can-mobile@1x.webp 1x, images/index_can-mobile@2x.webp 2x">
-
           <source type="image/png" media="(min-width: 1440px)" srcset="images/index_can-desktop@1x.png 1x, images/index_can-desktop@2x.png 2x" width="552" height="499">
           <source type="image/png" media="(min-width: 768px)" srcset="images/index_can-tablet@1x.png 1x, images/index_can-tablet@2x.png 2x" width="709" height="609">
           <img class="hero__img" src="images/index_can-mobile@1x.png" srcset="images/index_can-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов">
         </picture>
       </section>
 
-      <section class="target">
+      <section class="main-container__target target">
         <ul class="target__list">
           <li class="target__list-item">
             <h2 class="target__title target__title--slim">Похудение</h2>
@@ -81,7 +80,7 @@
         </ul>
       </section>
 
-      <section class="advantages">
+      <section class="main-container__advantages advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item advantages__list-item--nutrition">
@@ -99,54 +98,54 @@
         </ul>
       </section>
 
-      <section class="review">
-        <h2 class="review__title">Живой пример</h2>
+      <section class="main-container__review review">
+        <div class="review__wrapper">
+          <h2 class="review__title">Живой пример</h2>
 
-        <div class="review__stats">
-          <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="review__stats-list stats">
-            <li class="review__stats-item stats__item">
-              <span class="stats__number">5 КГ</span>
-              <span class="stats__comment">снижение веса</span>
-            </li>
-            <li class="review__stats-item stats__item">
-              <span class="stats__number">60 ДНЕЙ</span>
-              <span class="stats__comment">затрачено времени</span>
-            </li>
-          </ul>
-          <p class="review__stats-text">Затраты на питание: <span>15 000 РУБ.</span></p>
-        </div>
-
-        <div class="review__slider slider">
-          <div class="slider__images">
-            <div class="slider__images-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.webp 1x, images/cat_fat-tablet@2x.webp 2x" width="560" height="512">
-                <source type="image/webp" srcset="images/cat_fat-mobile@1x.webp 1x, images/cat_fat-mobile@2x.webp 2x">
-
-                <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
-                <img class="slider__img slider__img--left" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
-              </picture>
-            </div>
-
-            <div class="slider__images-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.webp 1x, images/cat_slim-tablet@2x.webp 2x" width="560" height="512">
-                <source type="image/webp" srcset="images/cat_slim-mobile@1x.webp 1x, images/cat_slim-mobile@2x.webp 2x">
-
-                <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
-                <img class="slider__img slider__img--right" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
-              </picture>
-            </div>
-
+          <div class="review__stats">
+            <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <ul class="review__stats-list stats">
+              <li class="review__stats-item stats__item">
+                <span class="stats__number">5 КГ</span>
+                <span class="stats__comment">снижение веса</span>
+              </li>
+              <li class="review__stats-item stats__item">
+                <span class="stats__number">60 ДНЕЙ</span>
+                <span class="stats__comment">затрачено времени</span>
+              </li>
+            </ul>
+            <p class="review__stats-text">Затраты на питание: <span>15 000 РУБ.</span></p>
           </div>
-          <button class="slider__swiper" type="button">
-            <span class="visually-hidden">Влево-Вправо</span>
-          </button>
+
+          <div class="review__slider slider">
+            <div class="slider__images">
+              <div class="slider__images-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.webp 1x, images/cat_fat-tablet@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/cat_fat-mobile@1x.webp 1x, images/cat_fat-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
+                  <img class="slider__img slider__img--left" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: до">
+                </picture>
+              </div>
+
+              <div class="slider__images-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.webp 1x, images/cat_slim-tablet@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/cat_slim-mobile@1x.webp 1x, images/cat_slim-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
+                  <img class="slider__img slider__img--right" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" width="280" height="256" alt="Живой пример: после">
+                </picture>
+              </div>
+
+            </div>
+            <button class="slider__swiper" type="button">
+              <span class="visually-hidden">Влево-Вправо</span>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="map">
+      <section class="main-container__map map">
         <div class="map__information">
           <h2 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
@@ -159,10 +158,9 @@
               <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
               <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
               <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
-
               <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
               <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
-              <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" >
+              <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" title="Наши координаты">
             </picture>
           </noscript>  
         </div>
@@ -177,18 +175,18 @@
         </a>
 
         <ul class="main-footer__socials socials">
-          <li class="socials__item socials__item--vk">
-            <a class="socials__link" href="https://vk.com/htmlacademy">
+          <li class="socials__item">
+            <a class="socials__link  socials__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
-          <li class="socials__item socials__item--youtube">
-            <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в YouTube</span>
             </a>
           </li>
-          <li class="socials__item socials__item--telegram">
-            <a class="socials__link" href="https://t.me/htmlacademy">
+          <li class="socials__item">
+            <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Telegram</span>
             </a>
           </li>

@@ -53,6 +53,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    column-gap: 34px;
+
     &--light .site-list__link {
       color: #ffffff;
 
@@ -71,7 +73,7 @@
   }
 
   .site-list__link {
-    padding-top: 71px;
+    padding-top: 74px;
 
     font-size: 20px;
 

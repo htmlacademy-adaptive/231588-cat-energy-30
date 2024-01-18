@@ -40,7 +40,7 @@
 
 .hero__button {
   display: block;
-  margin: 138px 20px 20px;
+  margin: 138px 20px 0;
   padding: 10px 44px;
 }
 
@@ -103,7 +103,6 @@
     &::after {
       content: "";
       position: absolute;
-      display: block;
       top: 0;
       right: 0;
       width: 50%;

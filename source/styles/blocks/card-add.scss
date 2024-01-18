@@ -27,11 +27,19 @@
   }
 }
 
+.card-add__button {
+  padding-top: 10px;
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
 
 @media (min-width: $tablet-width) {
   .card-add {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 26px 38px 28px 38px;
 
     border: 1px solid #cdcdcd;
@@ -102,7 +110,7 @@
 
   .card-add__button {
     width: 244px;
-    grid-column: 3;
+    grid-column: 3 / 4;
     padding-top: 10px;
     padding-bottom: 10px;
 

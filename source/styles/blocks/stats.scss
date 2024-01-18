@@ -1,12 +1,13 @@
 .stats {
   @include list();
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
 }
 
 .stats__item {
-  width: 100%;
+  width: 124px;
   height: 56px;
   padding-top: 15px;
 

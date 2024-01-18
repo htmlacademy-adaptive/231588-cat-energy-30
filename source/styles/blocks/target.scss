@@ -1,6 +1,5 @@
 .target {
   @include container();
-  margin-bottom: 20px;
 }
 
 .target__list {
@@ -36,6 +35,7 @@
     width: 50px;
     height: 53px;
     left: 0;
+    top: 1px;
 
     background-image: url("../../images/icons/stack.svg#catalog-slim");
   }
@@ -75,7 +75,8 @@
 
   &::after {
     content: "";
-    width: 24px;
+    display: block;
+    width: 35px;
     height: 12px;
 
     background-image: url("../../images/icons/stack.svg#icon-arrow");
@@ -84,10 +85,10 @@
   }
 
   &:hover::after {
-    width: 32px;
+    width: 47px;
   }
   &:active::after {
-    width: 32px;
+    width: 47px;
   }
 
   &:active {
@@ -96,10 +97,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .target {
-    margin-bottom: 45px;
-  }
-  
   .target__title {
     padding: 20px 20px 24px 0;
 
@@ -169,12 +166,12 @@
 
   .target__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 80px;
   }
 
   .target__list-item {
-    flex-basis: 50%;
+    flex-basis: 47%;
     padding: 20px 65px 65px 52px;
   }
 

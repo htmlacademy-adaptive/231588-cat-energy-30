@@ -1,1 +1,18 @@
-// не забыть удалить, если не будет нужен
+.main-container__hero {
+    margin-bottom: 20px;
+}
+
+.main-container__target {
+    margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+    .main-container__target {
+        margin-bottom: 45px;
+    }
+
+    .main-container__hero{
+        margin-bottom: 0;
+    }
+}
+

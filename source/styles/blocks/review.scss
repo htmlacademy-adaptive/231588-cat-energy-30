@@ -59,7 +59,7 @@
   
   .review__stats {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     align-content: center;
     margin-bottom: 70px;
   }
@@ -99,12 +99,14 @@
 
 @media (min-width: $desktop-width) {
   .review {
+    background: linear-gradient(to bottom,#ffffff 136px,#eaeaea 136px 384px);
+  }
+
+  .review__wrapper {
     display: grid;
     justify-content: center;
-    grid-template-columns: 110px 610px 610px 110px;
+    grid-template-columns: repeat(2, 610px);
     grid-template-rows: 136px 462px;
-
-    background: linear-gradient(to bottom,#ffffff 136px,#eaeaea 136px 384px);
   }
 
   .review__title,
@@ -118,15 +120,15 @@
 
   .review__title {
     padding-bottom: 76px;
-    grid-column: 2 / 4;
-    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 
   .review__stats {
     display: flex;
     flex-direction: column;
-    grid-column: 2 / 3;
-    grid-row: 2;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
 
   .review__stats-text {
@@ -145,7 +147,7 @@
   }
 
   .review__slider {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / -1;
     background: none;
   }

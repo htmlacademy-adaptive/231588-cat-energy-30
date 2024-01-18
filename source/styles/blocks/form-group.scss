@@ -35,7 +35,7 @@
         width: 30px;
         height: 30px;
         border: 1px solid #cdcdcd;
-        background-image: radial-gradient(circle at center, $primary-color 10px, #ffffff 10px 18px);
+        background-image: radial-gradient(circle at center, $primary-color 7px, #ffffff 7px 18px);
       }
 
       &:disabled {
@@ -255,6 +255,11 @@
     }
   }
 
+  .form-group__input-wrapper::after {
+    top: 16px;
+    right: 14px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -267,6 +272,12 @@
     &::after {
       top: 17px;
       right: 16px;
+    }
+  }
+
+  .form-group__item {
+    &--radio input:checked {
+      background-image: radial-gradient(circle at center, $primary-color 10px, #ffffff 10px 18px);
     }
   }
 }

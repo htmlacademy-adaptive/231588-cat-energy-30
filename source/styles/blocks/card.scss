@@ -1,20 +1,18 @@
 .card {
   display: grid;
-  grid-template-columns: 20px 1fr 1fr 20px;
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   row-gap: 22px;
 
   &:last-child {
-    grid-template-rows: repeat(3, auto);
     row-gap: 0;
   }
 
   &:last-child .card__title {
     width: 100%;
     position: relative;
-    grid-column: 2 / 4;
-    grid-row: 1;
+    grid-column: 1 / 3;
+    grid-row: 1 / -1;
     margin: 0;
     padding-top: 62px;
     padding-bottom: 8px;
@@ -39,23 +37,29 @@
   &:last-child .card__button {
     grid-row: 3;
   }
+
+  &:last-child .card__text {
+    grid-column: 1 / -1;
+  }
 }
 
 .card__image {
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
   grid-row: 1;
 
   text-align: center;
 }
 
 .card__content {
-  grid-column: 3 / 4;
+  grid-column: 2 / 3;
   grid-row: 1;
 }
 
 .card__button {
-  grid-column: 2 / 4;
+  grid-column: 1 / -1;
   grid-row: 2;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card__title {
@@ -69,7 +73,6 @@
 
   text-transform: uppercase;
   color: #222222;
-  cursor: pointer;
 
   & h2 {
     padding-bottom: 14px;
@@ -134,7 +137,7 @@
     background: linear-gradient(to bottom,#ffffff 82px,$basic-text-background 82px 511px);
 
     &:last-child {
-      height: 435px;
+      min-height: 435px;
       justify-content: flex-start;
 
       background: none;
@@ -208,6 +211,11 @@
 
   .card__button {
     width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

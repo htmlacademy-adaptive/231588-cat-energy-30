@@ -20,7 +20,6 @@
 
   &::before {
     content: "";
-    display: block;
     position: absolute;
     top: 42%;
     left: -18px;
@@ -35,7 +34,6 @@
 
   &::after {
     content: "";
-    display: block;
     position: absolute;
     top: 46%;
     left: -10px;

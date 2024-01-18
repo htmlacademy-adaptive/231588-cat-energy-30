@@ -27,6 +27,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $paragraf-font-color;
+
+  & span {
+    display: inline;
+  }
 }
 
 .map__image {
@@ -75,7 +79,7 @@
 
   .map__information {
     content: "";
-    position: absolute;
+    position: absolute;  
     padding-left: 80px;
     padding-right: 80px;
     top: 95px;

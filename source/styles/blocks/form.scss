@@ -103,7 +103,7 @@
 
     &--checkbox {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       column-gap: 60px;
       width: 628px;
       margin: 0 auto;
@@ -133,7 +133,7 @@
 
   .form__bottom {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     column-gap: 60px;
     width: 628px;
     margin: 0 auto;
@@ -146,6 +146,8 @@
   }
 
   .form__bottom-text {
+    padding-top: 17px;
+    
     font-size: 16px;
   }
 }
@@ -223,7 +225,7 @@
 
     &--checkbox {
       @include container();
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
       gap: 80px;
       margin-bottom: 28px;
 
