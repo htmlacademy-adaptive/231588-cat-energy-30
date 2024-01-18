@@ -1,1 +1,1 @@
-var r=document.querySelector(".form__bottom-btn");r.addEventListener("click",function(){let e=document.querySelectorAll("input[required]");for(let t=0;t<e.length;t++)e[t].classList.add("form-group__item-input--error")});
+var n=document.querySelector(".form__bottom-btn");n.addEventListener("click",function(){let e=document.querySelectorAll("input[required]");for(let t=0;t<e.length;t++)e[t].classList.add("form-group__item-input--error")});
