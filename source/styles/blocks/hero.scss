@@ -33,6 +33,7 @@
 
 .hero__img {
   content: "";
+  display: block;
   position: absolute;
   top: 167px;
   left: calc(55% - ($mobile-width/2));

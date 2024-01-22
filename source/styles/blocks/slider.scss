@@ -70,6 +70,11 @@
   grid-template-rows: auto;
 }
 
+.slider__img {
+  max-width: 280px;
+}
+
+
 .slider__images-wrapper {
   overflow: hidden;
 
@@ -96,6 +101,10 @@
   .slider__images {
     grid-template-columns: repeat(2, 280px);
     justify-content: center;
+  }
+
+  .slider__img {
+    max-width: 560px;
   }
 
   .slider__swiper {

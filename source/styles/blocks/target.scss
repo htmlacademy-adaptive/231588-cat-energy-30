@@ -76,7 +76,7 @@
   &::after {
     content: "";
     display: block;
-    width: 35px;
+    width: 24px;
     height: 12px;
 
     background-image: url("../../images/icons/stack.svg#icon-arrow");
@@ -85,10 +85,10 @@
   }
 
   &:hover::after {
-    width: 47px;
+    width: 32px;
   }
   &:active::after {
-    width: 47px;
+    width: 32px;
   }
 
   &:active {

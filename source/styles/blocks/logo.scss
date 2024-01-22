@@ -12,7 +12,12 @@
   }
 }
 
+.logo__image {
+  width: 33px;
+}
+
 .logo__text {
+  width: 101px;
   margin-left: 56px;
 
   &:hover {
@@ -29,13 +34,17 @@
     padding-top: 25px;
   }
 
+  .logo__image {
+    width: 60px;
+  }
+
   .logo__text {
     margin-left: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  // .logo {
-  //   padding-top: 0;
-  // }
+  .logo__image {
+    width: 70px;
+  }
 }
