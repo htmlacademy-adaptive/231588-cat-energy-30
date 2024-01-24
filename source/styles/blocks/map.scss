@@ -74,24 +74,33 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    display: grid;
+    grid-template-columns: 565px 1fr;
     position: relative;
   }
 
   .map__information {
-    content: "";
-    position: absolute;  
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     padding-left: 80px;
     padding-right: 80px;
-    top: 95px;
-    left: 110px;
+    margin-top: 95px;
+    margin-left: 110px;
+    margin-bottom: 106px;
     width: 565px;
-    height: 199px;
+    min-height: 199px;
+    z-index: 1;
 
     background-color: #ffffff;
   }
 
   .map__address {
     text-align: left;
+  }
+
+  .map__image {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 
   .map__image iframe {

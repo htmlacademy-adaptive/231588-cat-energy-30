@@ -109,8 +109,8 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 60px;
-      width: 628px;
-      margin: 0 auto;
+      padding-left: 70px;
+      padding-right: 70px;
       margin-bottom: 20px;
 
       & .form-group__title {
@@ -213,7 +213,7 @@
 
     &--radio {
       flex-basis: 50%;
-      height: 196px;
+      min-height: 196px;
       padding-top: 25px;
       padding-left: 28px;
     }

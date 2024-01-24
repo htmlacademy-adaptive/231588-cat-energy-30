@@ -98,6 +98,7 @@
 
 @media (min-width: $tablet-width) {
   .target__title {
+    max-width: 388px;
     padding: 20px 20px 24px 0;
 
     font-size: 36px;
@@ -107,14 +108,14 @@
       width: 200px;
       height: 211px;
       left: unset;
-      right: 43px;
+      right: -65%;
       top: 23px;
     }
 
     &--pro::before {
       width: 268px;
       height: 200px;
-      right: 9px;
+      right: -74%;
       top: 34px;
     }
   }

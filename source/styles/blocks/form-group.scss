@@ -9,6 +9,7 @@
 
 .form-group__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 13px;
   align-items: center;
@@ -143,11 +144,11 @@
     mask-image: url("../../images/icons/stack.svg#email-stroke");
   }
 
-  &:focus::after {
+  &:has(.form-group__item-input:focus)::after {
     background-color: $primary-color;
   }
 
-  &--error::after {
+  &:has(.form-group__item-input--error)::after {
     background-color: $error-color;
   }
 }
@@ -178,7 +179,6 @@
 
   &:focus {
     outline: 2px solid $paragraf-font-color;
-    border: none;
     border-radius: 0;
   }
 

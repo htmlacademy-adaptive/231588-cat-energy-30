@@ -26,6 +26,10 @@
   line-height: 18px;
   color: $paragraf-font-color;
 
+  & br {
+    display: none;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -88,6 +92,10 @@
     font-size: 16px;
     line-height: 24px;
     counter-increment: advantages-counter;
+
+    & br {
+      display: inline-block;
+    }
 
     &::after {
       content: counter(advantages-counter);
