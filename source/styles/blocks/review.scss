@@ -106,7 +106,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 610px);
-    grid-template-rows: 136px 1fr;
+    grid-template-rows: minmax(136px, auto) 1fr;
   }
 
   .review__title,

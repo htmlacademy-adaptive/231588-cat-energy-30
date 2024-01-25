@@ -8,7 +8,7 @@
 
 .stats__item {
   width: 124px;
-  height: 56px;
+  min-height: 56px;
   padding-top: 15px;
 
   text-align: center;
@@ -46,7 +46,7 @@
 
   .stats__item {
     width: 162px;
-    height: 72px; 
+    min-height: 72px; 
   }
 
   .stats__number {

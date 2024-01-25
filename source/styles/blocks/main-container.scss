@@ -16,3 +16,9 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+    .main-container__hero {
+        margin-bottom: 35px;
+    }
+}
+
