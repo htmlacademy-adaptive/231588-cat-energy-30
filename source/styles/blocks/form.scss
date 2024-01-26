@@ -78,7 +78,7 @@
   .form__text {
     padding-left: 70px;
     padding-right: 70px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
 
     font-size: 20px;
     line-height: 30px;
@@ -100,7 +100,6 @@
     &--radio {
       padding: 23px 70px 12px 27px;
       margin-bottom: 65px;
-      
 
       border: 1px solid #e7e7e7;
     }
@@ -151,7 +150,7 @@
 
   .form__bottom-text {
     padding-top: 17px;
-    
+
     font-size: 16px;
   }
 }
@@ -165,7 +164,7 @@
 
   .form__title {
     @include container();
-    margin-top: 10px;
+    margin-top: 45px;
   }
 
   .form__text {
@@ -182,7 +181,7 @@
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
     & .form__item {
       width: auto;
@@ -198,13 +197,17 @@
       flex-basis: 50%;
     }
 
+    &--anketa .form-group__item:last-child {
+      margin-bottom: 0;
+    }
+
     &--contacts {
       @include container();
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
       gap: 80px;
-      margin-bottom: 51px;
+      margin-bottom: 50px;
 
       & label {
         flex-basis: 50%;
@@ -215,12 +218,12 @@
       flex-basis: 50%;
       min-height: 196px;
       padding-top: 25px;
-      padding-left: 28px;
+      padding-left: 31px;
     }
 
     &--comments {
       @include container();
-      margin-bottom: 52px;
+      margin-bottom: 51px;
 
       & .form-group__title {
         padding-bottom: 0;

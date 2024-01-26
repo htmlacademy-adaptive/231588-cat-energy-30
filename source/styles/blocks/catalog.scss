@@ -57,10 +57,11 @@
 @media (min-width: $desktop-width) {
   .catalog__title {
     @include container();
+    margin-top: 35px;
     padding-bottom: 40px;
     padding-top: 10px;
   }
-  
+
   .catalog__list {
     @include container();
     margin-bottom: 67px;
@@ -73,6 +74,7 @@
     & .catalog__map {
       margin-top: 87px;
     }
+
     & .map__information {
       background-color: #ffffff;
     }

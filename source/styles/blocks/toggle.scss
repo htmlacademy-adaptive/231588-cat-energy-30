@@ -10,20 +10,20 @@
 
     &::after,
     &::before {
-        content: "";
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        top: -7px;
-        left: 0;
-        transition: 0.5s;
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      top: -7px;
+      left: 0;
+      transition: 0.5s;
 
-        background-color: $text-font-color;
+      background-color: $text-font-color;
     }
 
     &::before {
       top: 7px;
-    
+
       background-color: $text-font-color;
     }
   }
@@ -55,7 +55,6 @@
       transform: rotate(135deg);
     }
   }
-  
 
   &--nojs {
     display: none;

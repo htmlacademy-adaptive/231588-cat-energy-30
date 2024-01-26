@@ -48,6 +48,11 @@
   grid-row: 1;
 
   text-align: center;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card__content {
@@ -117,13 +122,6 @@
   line-height: 16px;
 }
 
-.card__image {
-  &:hover,
-  &:active {
-    opacity: 0.6;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .card {
     width: 324px;
@@ -134,7 +132,7 @@
     row-gap: 0;
     padding: 10px 37px 40px 37px;
 
-    background: linear-gradient(to bottom,#ffffff 82px,$basic-text-background 82px 511px);
+    background: linear-gradient(to bottom, #ffffff 82px, $basic-text-background 82px 511px);
 
     &:last-child {
       min-height: 435px;
@@ -223,6 +221,14 @@
   .card {
     width: 245px;
     padding: 10px 38px 40px;
+
+    &:last-child .card__title {
+      padding-top: 140px;
+    }
+
+    &:last-child .card__text {
+      padding-bottom: 92px;
+    }
   }
 
   .card__image {
@@ -253,15 +259,5 @@
 
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .card {
-    &:last-child .card__title {
-      padding-top: 140px;
-    }
-
-    &:last-child .card__text {
-      padding-bottom: 92px;
-    }
   }
 }

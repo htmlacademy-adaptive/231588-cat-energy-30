@@ -9,7 +9,7 @@
 .stats__item {
   width: 124px;
   min-height: 56px;
-  padding-top: 15px;
+  padding-top: 13px;
 
   text-align: center;
 
@@ -19,7 +19,7 @@
 
 .stats__number {
   display: block;
-  
+
   text-align: center;
   font-size: 24px;
 }
@@ -34,9 +34,8 @@
   line-height: 12px;
   color: $paragraf-font-color;
   background-color: #eaeaea;
-  box-shadow: -5px 0 0 #eaeaea,5px 0 0 #eaeaea;;
+  box-shadow: -5px 0 0 #eaeaea, 5px 0 0 #eaeaea;
 }
-
 
 @media (min-width: $tablet-width) {
   .stats {
@@ -46,7 +45,7 @@
 
   .stats__item {
     width: 162px;
-    min-height: 72px; 
+    min-height: 72px;
   }
 
   .stats__number {

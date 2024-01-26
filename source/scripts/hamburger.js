@@ -10,4 +10,3 @@ navToggle.addEventListener('click', () => {
   navMain.classList.toggle('main-nav--closed');
   navMain.classList.toggle('main-nav--opened');
 });
-

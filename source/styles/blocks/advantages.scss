@@ -65,7 +65,7 @@
   }
 
   .advantages__title {
-    padding-bottom: 72px;
+    padding-bottom: 70px;
 
     font-size: 60px;
     line-height: 60px;
@@ -101,7 +101,7 @@
       content: counter(advantages-counter);
       display: block;
       position: absolute;
-      top: -36px;
+      top: -41px;
       right: 0;
       z-index: -1;
 
@@ -111,6 +111,10 @@
       font-weight: 400;
       line-height: 280px;
       color: $basic-text-background;
+    }
+
+    &--nutrition::after {
+      right: 19px;
     }
 
     &::before {
@@ -127,7 +131,7 @@
   }
 
   .advantages__title {
-    padding-bottom: 68px;
+    padding-bottom: 70px;
   }
 
   .advantages__list {

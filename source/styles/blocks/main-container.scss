@@ -1,24 +1,23 @@
 .main-container__hero {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .main-container__target {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
-    .main-container__target {
-        margin-bottom: 45px;
-    }
+  .main-container__target {
+    margin-bottom: 45px;
+  }
 
-    .main-container__hero{
-        margin-bottom: 0;
-    }
+  .main-container__hero {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .main-container__hero {
-        margin-bottom: 35px;
-    }
+  .main-container__hero {
+    margin-bottom: 35px;
+  }
 }
-

@@ -4,7 +4,7 @@
   margin: 0;
   background: #ffffff;
   box-shadow: -20px 0 0 #ffffff, 20px 0 0 #ffffff;
-  
+
   &--line::before {
     content: "";
     position: absolute;
@@ -20,8 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .second-title {
-    box-shadow: -40px 0 0#fff,40px 0 0#fff;
-    
+    box-shadow: -40px 0 0#fff, 40px 0 0#fff;
+
     &--line::before {
       top: 24px;
     }
@@ -30,7 +30,7 @@
 
 @media (min-width: $desktop-width) {
   .second-title {
-    box-shadow: -40px 0 0#fff,40px 0 0#fff;
+    box-shadow: -40px 0 0#fff, 40px 0 0#fff;
 
     &--line::before {
       top: 22px;

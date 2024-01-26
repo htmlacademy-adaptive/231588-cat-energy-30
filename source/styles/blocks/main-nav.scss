@@ -1,26 +1,25 @@
 .main-nav {
   font-size: 16px;
 }
-  
 
 @media (max-width: $mobile-width-only) {
   .main-nav {
     position: relative;
-  
+
     &--closed .site-list {
       display: none;
     }
-  
+
     &--opened .site-list {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       z-index: 99;
-  
+
       background-color: #ffffff;
     }
-  
+
     &--nojs .site-list {
       display: block;
     }

@@ -3,8 +3,8 @@
 }
 
 .review__title {
-  margin: 0;
   @include container();
+  margin: 0;
   padding-top: 25px;
   margin-bottom: 40px;
   font-size: 36px;
@@ -32,7 +32,7 @@
 }
 
 .review__stats-item {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 }
 
 .review__stats-text {
@@ -56,12 +56,12 @@
     font-size: 60px;
     line-height: 60px;
   }
-  
+
   .review__stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
 
   .review__stats-list {
@@ -93,13 +93,13 @@
     width: 100%;
     margin: 0;
 
-    background: linear-gradient(to bottom,#ffffff 151px,#eaeaea 151px 384px);
+    background: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px 384px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .review {
-    background: linear-gradient(to bottom,#ffffff 136px,#eaeaea 136px 384px);
+    background: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px 384px);
   }
 
   .review__wrapper {
@@ -133,6 +133,7 @@
 
   .review__stats-text {
     width: 100%;
+    margin-top: 3px;
     text-align: left;
 
     & span {

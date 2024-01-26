@@ -57,6 +57,9 @@
 
   .catalog-add__title {
     margin-left: 0;
+    grid-column: span 4;
+
+    border: none;
   }
 
   .catalog-add__list {
@@ -71,12 +74,6 @@
     &:first-child {
       border-top: 1px solid #cdcdcd;
     }
-  }
-
-  .catalog-add__title {
-    grid-column: span 4;
-
-    border: none;
   }
 
   .catalog-add__gift {
