@@ -7,9 +7,9 @@
 }
 
 .catalog__title {
-  @include container();
-  padding-top: 27px;
-  padding-bottom: 41px;
+  display: block;
+  padding: 27px 20px 41px 20px;
+  margin: 0 auto;
 
   border-bottom: 1px solid #ebebeb;
 }
@@ -19,26 +19,28 @@
 }
 
 .catalog__item {
-  @include container();
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 22px 20px;
 
   border-bottom: 1px solid #ebebeb;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    margin-bottom: 74px;
+    margin-bottom: 43px;
+    padding-left: 30px;
+    padding-top: 0;
 
     border: none;
   }
 
   .catalog__list {
-    @include container();
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 60px;
-    margin-bottom: 70px; // не переопределяется
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto 60px;
   }
 
   .catalog__item {
@@ -46,16 +48,33 @@
     padding: 0;
     margin: 0;
 
-    background-color: $basic-text-background;
+    &:last-child {
+      margin-top: 82px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__title {
+    @include container();
+    margin-top: 35px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+
   .catalog__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include container();
+    margin-bottom: 67px;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 63px 80px;
   }
 
   .catalog {
+    & .catalog__map {
+      margin-top: 87px;
+    }
+
     & .map__information {
       background-color: #ffffff;
     }

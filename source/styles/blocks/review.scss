@@ -17,6 +17,11 @@
   @include container();
 }
 
+.review__slider {
+  display: grid;
+  justify-items: center;
+}
+
 .review__text {
   margin: 0;
   margin-bottom: 20px;
@@ -31,6 +36,7 @@
 }
 
 .review__stats-text {
+  margin-top: 0;
   margin-bottom: 20px;
 
   text-align: center;
@@ -44,22 +50,63 @@
   }
 
   .review__title {
+    margin-bottom: 60px;
     padding-top: 45px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
+  .review__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    margin-bottom: 80px;
+  }
+
+  .review__stats-list {
+    grid-column: 1 / 4;
+    align-self: flex-start;
+    margin-bottom: 99px;
+  }
+
+  .review__stats-text {
+    width: 174px;
+    margin-top: 8px;
+
+    font-size: 20px;
+    line-height: 27px;
+    grid-column: 4 / 5;
+
+    text-align: right;
+  }
+
+  .review__text {
+    margin-bottom: 55px;
+    grid-column: 1 / 5;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .review__slider {
-    background-color: #eaeaea;
+    width: 100%;
+    margin: 0;
+
+    background: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px 384px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .review {
-    @include container();
+    background: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px 384px);
+  }
+
+  .review__wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    grid-template-columns: repeat(2, 610px);
+    grid-template-rows: minmax(136px, auto) 1fr;
   }
 
   .review__title,
@@ -73,6 +120,36 @@
 
   .review__title {
     padding-bottom: 76px;
-    grid-column: span 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .review__stats {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .review__stats-text {
+    width: 100%;
+    margin-top: 3px;
+    text-align: left;
+
+    & span {
+      padding-left: 62px;
+    }
+  }
+
+  .review__text {
+    max-width: 432px;
+    padding-top: 70px;
+    margin-bottom: 69px;
+  }
+
+  .review__slider {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    background: none;
   }
 }

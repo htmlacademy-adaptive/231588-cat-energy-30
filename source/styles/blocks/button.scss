@@ -18,7 +18,7 @@
 
   &:active {
     background-color: #5eaa2f;
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &--secondary {
@@ -33,5 +33,14 @@
       background-color: #ebebeb;
       color: $paragraf-font-color;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }

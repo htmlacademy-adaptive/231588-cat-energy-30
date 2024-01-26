@@ -1,36 +1,66 @@
 .slider {
   position: relative;
+  padding-bottom: 35px;
 
   font-size: 16px;
 }
 
 .slider__swiper {
+  position: absolute;
+  padding: 0;
+  width: 4px;
+  height: 256px;
+  top: 0;
+  left: 49%;
+
   border: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 108px;
-    left: 44%;
-    width: 40px;
-    height: 40px;
-
-    background-image: url("../../images/icons/stack.svg#thumb");
-    z-index: 5;
-  }
+  border-radius: 2px;
+  background-color: #666666;
+  z-index: 4;
 
   &::before {
     content: "";
     position: absolute;
-    top: 3px;
-    bottom: 0;
-    left: 159px;
-    width: 4px;
-    height: 256px;
+    top: 42%;
+    left: -18px;
+    width: 40px;
+    height: 40px;
 
-    border-radius: 2px;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: -10px;
+    width: 24px;
+    height: 18px;
+
+    mask-image: url("../../images/icons/stack.svg#thumb");
     background-color: #666666;
-    z-index: 4;
+    z-index: 6;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $primary-color;
+  }
+
+  &:hover::before {
+    border-color: $primary-color;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active::before {
+    border-color: rgba(94, 170, 47, 0.6);
   }
 }
 
@@ -39,6 +69,11 @@
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: auto;
 }
+
+.slider__img {
+  max-width: 280px;
+}
+
 
 .slider__images-wrapper {
   overflow: hidden;
@@ -53,6 +88,51 @@
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     z-index: 1;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 96px;
+  }
+
+  .slider__images {
+    grid-template-columns: repeat(2, 280px);
+    justify-content: center;
+  }
+
+  .slider__img {
+    max-width: 560px;
+  }
+
+  .slider__swiper {
+    height: 512px;
+    left: 50%;
+
+    &::after {
+      top: 48%;
+      left: -10px;
+    }
+
+    &::before {
+      top: 46%;
+      left: -19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    padding-bottom: 83px;
+  }
+
+  .slider__images {
+    margin-left: 50px;
+  }
+
+  .slider__swiper {
+    left: 54%;
+  }
+}

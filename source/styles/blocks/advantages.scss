@@ -12,19 +12,23 @@
 
 .advantages__list {
   @include list();
-  margin-bottom: 49px;
+  margin-bottom: 30px;
 }
 
 .advantages__list-item {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: $paragraf-font-color;
+
+  & br {
+    display: none;
+  }
 
   &::before {
     content: "";
@@ -55,36 +59,49 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-bottom: 47px;
+    width: auto;
+    padding-bottom: 6px;
     border-bottom: 1px solid #e6e6e6;
   }
 
   .advantages__title {
+    padding-bottom: 70px;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   .advantages__list {
+    margin-bottom: 0;
     display: grid;
     justify-content: start;
-    grid-template-columns: 1fr 1fr;
-    gap: 37px 157px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 60px;
 
     counter-reset: advantages-counter;
   }
 
   .advantages__list-item {
+    max-width: 243px;
     position: relative;
+    margin-bottom: 77px;
+    gap: 31px;
     flex-direction: column;
     align-items: baseline;
 
+    font-size: 16px;
+    line-height: 24px;
     counter-increment: advantages-counter;
+
+    & br {
+      display: inline-block;
+    }
 
     &::after {
       content: counter(advantages-counter);
       display: block;
       position: absolute;
-      top: 0;
+      top: -41px;
       right: 0;
       z-index: -1;
 
@@ -95,15 +112,45 @@
       line-height: 280px;
       color: $basic-text-background;
     }
+
+    &--nutrition::after {
+      right: 19px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
+    @include container();
     border: none;
   }
 
+  .advantages__title {
+    padding-bottom: 70px;
+  }
+
   .advantages__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 23px;
+    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .advantages__list-item {
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      right: -4px;
+      top: -39px;
+    }
+
+    &--nutrition::after {
+      right: 19px;
+    }
   }
 }

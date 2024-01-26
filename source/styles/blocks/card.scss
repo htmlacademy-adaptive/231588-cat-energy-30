@@ -1,25 +1,21 @@
-.card__title {
-  @include link();
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #222222;
-
-  & h2 {
-    margin: 0;
-    font-weight: 400;
-  }
-}
-
 .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  row-gap: 22px;
+
   &:last-child {
-    padding-top: 25px;
+    row-gap: 0;
   }
 
   &:last-child .card__title {
+    width: 100%;
     position: relative;
+    grid-column: 1 / 3;
+    grid-row: 1 / -1;
     margin: 0;
-    padding-top: 23px;
+    padding-top: 62px;
+    padding-bottom: 8px;
 
     font-weight: 400;
     text-align: center;
@@ -29,7 +25,7 @@
   &:last-child .card__title::before {
     content: "";
     position: absolute;
-    top: -23px;
+    top: 7px;
     left: 45%;
     width: 30px;
     height: 30px;
@@ -37,9 +33,74 @@
     background-image: url("../../images/icons/stack.svg#plus");
     background-repeat: no-repeat;
   }
+
+  &:last-child .card__button {
+    grid-row: 3;
+  }
+
+  &:last-child .card__text {
+    grid-column: 1 / -1;
+  }
+}
+
+.card__image {
+  grid-column: 1 / 2;
+  grid-row: 1;
+
+  text-align: center;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.card__content {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.card__button {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card__title {
+  @include link();
+  display: block;
+  width: 76px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  color: #222222;
+
+  & h2 {
+    padding-bottom: 14px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  &:hover h2,
+  &:active h2 {
+    opacity: 0.6;
+  }
 }
 
 .card__text {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  margin: 0;
+  padding-bottom: 21px;
+
+  text-align: center;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
@@ -48,11 +109,155 @@
 
 .card__list {
   @include list();
+  width: 140px;
 }
 
 .card__list-item {
+  display: flex;
+  justify-content: space-between;
+
   text-align: center;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 324px;
+    max-width: 511px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0;
+    padding: 10px 37px 40px 37px;
+
+    background: linear-gradient(to bottom, #ffffff 82px, $basic-text-background 82px 511px);
+
+    &:last-child {
+      min-height: 435px;
+      justify-content: flex-start;
+
+      background: none;
+      border: 2px solid $basic-text-background;
+    }
+
+    &:last-child .card__title {
+      width: 134px;
+      padding-top: 150px;
+      padding-bottom: 27px;
+
+      font-size: 20px;
+    }
+
+    &:last-child .card__text {
+      width: 170px;
+      padding-bottom: 82px;
+
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &:last-child .card__title::before {
+      width: 60px;
+      height: 60px;
+      top: 36px;
+      left: 36px;
+
+      background-image: url("../../images/icons/stack.svg#plus-tablet");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .card__image {
+    width: auto;
+    order: -1;
+    padding-bottom: 17px;
+  }
+
+  .card__title {
+    width: 100%;
+    padding-bottom: 16px;
+
+    & h2 {
+      width: 135px;
+      margin: 0 auto;
+      padding-bottom: 0;
+
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .card__content {
+    margin-bottom: 32px;
+  }
+
+  .card__list {
+    width: 250px;
+  }
+
+  .card__list-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card__button {
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 245px;
+    padding: 10px 38px 40px;
+
+    &:last-child .card__title {
+      padding-top: 140px;
+    }
+
+    &:last-child .card__text {
+      padding-bottom: 92px;
+    }
+  }
+
+  .card__image {
+    padding-bottom: 7px;
+  }
+
+  .card__content {
+    margin-bottom: 34px;
+  }
+
+  .card__title {
+    padding-bottom: 18px;
+  }
+
+  .card__list {
+    width: 169px;
+  }
+
+  .card__list-item {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .card__button {
+    width: 169px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

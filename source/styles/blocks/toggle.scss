@@ -1,0 +1,62 @@
+.toggle {
+  position: relative;
+  border: none;
+
+  &--open {
+    width: 24px;
+    height: 2px;
+
+    background-color: $text-font-color;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      top: -7px;
+      left: 0;
+      transition: 0.5s;
+
+      background-color: $text-font-color;
+    }
+
+    &::before {
+      top: 7px;
+
+      background-color: $text-font-color;
+    }
+  }
+
+  &--close {
+    width: 24px;
+    height: 2px;
+
+    background-color: transparent;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      left: 0;
+      top: 0;
+      transition: 0.5s;
+
+      background-color: $text-font-color;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
+}

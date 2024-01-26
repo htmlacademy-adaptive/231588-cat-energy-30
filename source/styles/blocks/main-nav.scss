@@ -1,3 +1,40 @@
 .main-nav {
   font-size: 16px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    position: relative;
+
+    &--closed .site-list {
+      display: none;
+    }
+
+    &--opened .site-list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+
+      background-color: #ffffff;
+    }
+
+    &--nojs .site-list {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 50%;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-grow: 0;
+  }
+}

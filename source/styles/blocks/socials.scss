@@ -1,42 +1,41 @@
 .socials {
   @include list();
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 
   font-size: 16px;
 }
 
-.socials__item {
-  width: 28px;
-  height: 22px;
-}
-
 .socials__link {
   @include link();
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  cursor: pointer;
+  position: relative;
+  width: 28px;
+  height: 22px;
+  margin-top: 20px;
 
   background-color: #666666;
 
-  &--vk {
+  &::after {
+    content: "";
+    display: block;
     width: 28px;
     height: 22px;
+    top: 0;
+    left: 0;
+  }
+
+  &--vk {
     mask-image: url("../../images/icons/stack.svg#vkontakte");
   }
 
   &--youtube {
-    width: 28px;
-    height: 22px;
     mask-image: url("../../images/icons/stack.svg#youtube");
   }
 
   &--telegram {
-    width: 28px;
-    height: 22px;
     mask-image: url("../../images/icons/stack.svg#telegram");
   }
 

@@ -1,5 +1,6 @@
 .card-add__title {
   margin: 0;
+  padding-bottom: 13px;
 
   font-size: 16px;
   font-weight: 400;
@@ -10,11 +11,109 @@
 
 .card-add__list {
   @include list();
+  padding-bottom: 15px;
 }
 
-.card-add__list-item span {
-  font-family: $secondary-font;
-  text-align: center;
-  line-height: 14px;
-  color: $paragraf-font-color;
+.card-add__list-item {
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: $paragraf-font-color;
+  }
+}
+
+.card-add__button {
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .card-add {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 26px 38px 28px 38px;
+
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .card-add__title {
+    padding-bottom: 28px;
+
+    font-size: 20px;
+  }
+
+  .card-add__button {
+    grid-column: span 2;
+  }
+
+  .card-add__list {
+    text-align: right;
+  }
+
+  .card-add__list-item {
+    display: block;
+
+    & span {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    & span:first-child {
+      padding-right: 49px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-add {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 17px;
+
+    border: 0;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .card-add__title {
+    padding-bottom: 0;
+
+    line-height: 20px;
+  }
+
+  .card-add__list {
+    padding-bottom: 0;
+    margin-right: 40px;
+
+    line-height: 20px;
+  }
+
+  .card-add__list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+  }
+
+  .card-add__button {
+    width: 244px;
+    grid-column: 3 / 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

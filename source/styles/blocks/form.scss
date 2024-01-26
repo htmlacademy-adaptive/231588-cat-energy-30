@@ -6,7 +6,7 @@
 
 .form__text {
   @include container();
-  display: block;
+  margin: 0;
   margin-bottom: 39px;
   line-height: 18px;
   text-transform: uppercase;
@@ -19,16 +19,33 @@
 }
 
 .form__item {
+  padding: 0 20px;
+  margin: 0;
+
   &--anketa {
+    padding-bottom: 10px;
+
     border-bottom: 1px solid #d9d9d9;
   }
 
   &--radio {
     margin-bottom: 26px;
     padding-top: 22px;
-    padding-bottom: 19px;
+    padding-bottom: 8px;
 
     border-bottom: 1px solid #d9d9d9;
+  }
+
+  &--contacts {
+    padding-bottom: 10px;
+  }
+
+  &--comments {
+    margin-bottom: 10px;
+  }
+
+  &--checkbox {
+    margin-bottom: 24px;
   }
 }
 
@@ -39,46 +56,102 @@
 
 .form__bottom-btn {
   width: 100%;
+  margin-bottom: 21px;
 }
 
 .form__bottom-text {
   display: block;
   text-align: center;
+
+  font-family: $secondary-font;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .form__title {
-    margin-bottom: 54px;
+    margin-bottom: 17px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 0;
   }
 
   .form__text {
-    margin-bottom: 66px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 65px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
+  .form__items-wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   .form__item {
     border: none;
+    padding: 0;
+
+    &--anketa {
+      margin-bottom: 52px;
+    }
 
     &--radio {
-      padding: 0;
-      margin: 0;
+      padding: 23px 70px 12px 27px;
+      margin-bottom: 65px;
+
       border: 1px solid #e7e7e7;
     }
 
     &--checkbox {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 60px;
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-bottom: 20px;
+
+      & .form-group__title {
+        padding-bottom: 57px;
+      }
+    }
+
+    &--contacts {
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-bottom: 44px;
+    }
+
+    &--comments {
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-bottom: 45px;
+
+      & .form-group__title {
+        padding-bottom: 88px;
+      }
     }
   }
 
   .form__bottom {
     display: flex;
+    align-items: flex-start;
+    column-gap: 60px;
+    width: 628px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+    padding-left: 0;
   }
 
   .form__bottom-btn {
     width: 284px;
+  }
+
+  .form__bottom-text {
+    padding-top: 17px;
+
+    font-size: 16px;
   }
 }
 
@@ -89,8 +162,18 @@
     }
   }
 
+  .form__title {
+    @include container();
+    margin-top: 45px;
+  }
+
+  .form__text {
+    @include container();
+    margin-bottom: 66px;
+  }
+
   .form__items {
-    margin-bottom: 79px;
+    margin-bottom: 58px;
   }
 
   .form__items-wrapper {
@@ -98,11 +181,10 @@
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
-    & fieldset {
+    & .form__item {
       width: auto;
-      padding: 0;
       margin: 0;
       flex-grow: 1;
     }
@@ -111,23 +193,62 @@
   .form__item {
     margin-bottom: 72px;
 
+    &--anketa {
+      flex-basis: 50%;
+    }
+
+    &--anketa .form-group__item:last-child {
+      margin-bottom: 0;
+    }
+
     &--contacts {
+      @include container();
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
       gap: 80px;
+      margin-bottom: 50px;
 
       & label {
-        flex-grow: 1;
+        flex-basis: 50%;
+      }
+    }
+
+    &--radio {
+      flex-basis: 50%;
+      min-height: 196px;
+      padding-top: 25px;
+      padding-left: 31px;
+    }
+
+    &--comments {
+      @include container();
+      margin-bottom: 51px;
+
+      & .form-group__title {
+        padding-bottom: 0;
       }
     }
 
     &--checkbox {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      @include container();
+      grid-template-columns: repeat(4, 1fr);
+      gap: 80px;
+      margin-bottom: 28px;
+
+      & .form-group__title {
+        padding-bottom: 0;
+        margin-bottom: 57px;
+      }
     }
   }
 
+  .form__bottom {
+    @include container();
+    column-gap: 80px;
+  }
+
   .form__bottom-btn {
-    margin-right: 80px;
+    width: 570px;
   }
 }
