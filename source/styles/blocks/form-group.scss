@@ -4,6 +4,10 @@
   padding-bottom: 24px;
 
   border: none;
+
+  &--checkbox .form-group__title {
+    margin-bottom: 2px;
+  }
 }
 
 .form-group__item {

@@ -8,6 +8,10 @@
   padding-bottom: 25px;
 
   background-color: $basic-text-background;
+
+  &--white-bg {
+    background-color: #ffffff;
+  }
 }
 
 .map__title {
