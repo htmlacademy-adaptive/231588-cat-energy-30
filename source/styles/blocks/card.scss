@@ -124,8 +124,6 @@
 
 @media (min-width: $tablet-width) {
   .card {
-    width: 324px;
-    max-width: 511px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +133,6 @@
     background: linear-gradient(to bottom, #ffffff 82px, $basic-text-background 82px 511px);
 
     &:last-child {
-      min-height: 435px;
       justify-content: flex-start;
 
       background: none;
@@ -219,7 +216,6 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    width: 245px;
     padding: 10px 38px 40px;
 
     &:last-child .card__title-link {
