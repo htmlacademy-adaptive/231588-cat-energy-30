@@ -1,5 +1,4 @@
 .form-group {
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 24px;
@@ -73,7 +72,7 @@
     }
 
     &:focus {
-      border: 2px solid $paragraf-font-color;
+      outline: 2px solid $paragraf-font-color;
       border-radius: 0;
     }
   }
@@ -198,6 +197,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-group {
+    &--checkbox .form-group__title {
+      padding-bottom: 57px;
+    }
+
+    &--comments .form-group__title {
+      margin-bottom: 88px;
+    }
+  }
+
   .form-group__item {
     margin-bottom: 20px;
     gap: 14px;
@@ -262,6 +271,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-group {
+    &--anketa .form-group__item:last-child {
+      margin-bottom: 0;
+    }
+
+    &--comments .form-group__title {
+      margin-bottom: 75px;
+    }
+
+    &--checkbox .form-group__title {
+      margin-bottom: 0;
+    }
+  }
+
   .form-group__title {
     padding-bottom: 0;
     margin-bottom: 76px;

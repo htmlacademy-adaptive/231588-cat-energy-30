@@ -1,9 +1,5 @@
 .catalog {
   font-size: 16px;
-
-  & .map__information {
-    background-color: $basic-text-background;
-  }
 }
 
 .catalog__title {
@@ -70,13 +66,8 @@
     gap: 63px 80px;
   }
 
-  .catalog {
-    & .catalog__map {
-      margin-top: 87px;
-    }
-
-    & .map__information {
-      background-color: #ffffff;
-    }
+  .catalog__map {
+    margin-top: 87px;
   }
 }
+

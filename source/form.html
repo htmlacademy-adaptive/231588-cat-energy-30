@@ -23,7 +23,7 @@
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_image-tablet.svg" width="60" height="50">
             <img  class="logo__image" src="images/logo_image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
           </picture>
-          <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
+          <img class="logo__text logo__text--header" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
         </a>
 
         <button class="main-header__toggle toggle toggle--open toggle--nojs" type="button">
@@ -56,7 +56,7 @@
 
         <div class="form__items-wrapper">
 
-          <fieldset class="form__item form__item--anketa form-group">
+          <fieldset class="form__item form__item--anketa form-group form-group--anketa">
             <legend class="form-group__title visually-hidden">Анкета</legend>
             <label class="form-group__item" for="name">
               Имя:*
@@ -76,15 +76,15 @@
             <legend class="form-group__title visually-hidden">Программа</legend>
             <label class="form-group__item form-group__item--radio" for="diet">
               Похудение
-              <input type="radio" id="diet" name="reasons" checked>
+              <input type="radio" id="diet" name="reasons" value="diet" checked>
             </label>
             <label class="form-group__item form-group__item--radio" for="fat">
               Набор массы
-              <input type="radio" id="fat" name="reasons">
+              <input type="radio" id="fat" name="reasons" value="fat">
             </label>
             <label class="form-group__item form-group__item--radio" for="unknown">
               Не знаю (нужен Ваш совет)
-              <input type="radio" id="unknown" name="reasons">
+              <input type="radio" id="unknown" name="reasons" value="unknown">
             </label>
           </fieldset>
 
@@ -106,29 +106,29 @@
           </label>
         </fieldset>
 
-        <fieldset class="form__item form__item--comments form-group">
+        <fieldset class="form__item form__item--comments form-group form-group--comments">
           <legend class="form-group__title second-title second-title--line">Комментарий</legend>
           <label class="visually-hidden" for="comment">Комментарий</label>
           <textarea class="form-group__item form-group__item--textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="form__item form__item--checkbox form-group">
+        <fieldset class="form__item form__item--checkbox form-group form-group--checkbox">
           <legend class="form-group__title second-title second-title--line">Дополнительно</legend>
           <label class="form-group__item form-group__item--checkbox" for="sugarfree">
             Cахарозаменитель
-            <input class="form-group__item-input" type="checkbox" id="sugarfree" name="sugarfree" checked>
+            <input class="form-group__item-input" type="checkbox" id="sugarfree" name="sugarfree" value="sugarfree" checked>
           </label>
           <label class="form-group__item form-group__item--checkbox" for="water">
             Питьевая вода
-            <input class="form-group__item-input" type="checkbox" id="water" name="water">
+            <input class="form-group__item-input" type="checkbox" id="water" name="water" value="water">
           </label>
           <label class="form-group__item form-group__item--checkbox" for="milk">
             Молоко
-            <input class="form-group__item-input" type="checkbox" id="milk" name="milk">
+            <input class="form-group__item-input" type="checkbox" id="milk" name="milk" value="milk">
           </label>
           <label class="form-group__item form-group__item--checkbox" for="vitamins">
             Витамины
-            <input class="form-group__item-input" type="checkbox" id="vitamins" name="vitamins">
+            <input class="form-group__item-input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
           </label>
         </fieldset>
 
@@ -141,7 +141,7 @@
       <section class="map">
         <div class="map__information">
           <h2 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__address-item">Санкт-Петербург</span></p>
         </div>
         <div class="map__image">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226088327262!2d30.314833977395775!3d59.96826597493003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1704801548216!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Наши координаты"></iframe>
@@ -165,7 +165,7 @@
       <div class="main-footer__wrapper">
 
         <a class="main-footer__logo logo" href="index.html">
-          <img class="logo__text" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
+          <img class="logo__text logo__text--footer" src="images/logo_text.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
         </a>
 
         <ul class="main-footer__socials socials">
