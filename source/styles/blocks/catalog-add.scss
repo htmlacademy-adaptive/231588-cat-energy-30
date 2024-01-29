@@ -27,6 +27,7 @@
 }
 
 .catalog-add__gift {
+  min-height: 290px;
   margin-bottom: 35px;
 }
 
@@ -44,6 +45,7 @@
   }
 
   .catalog-add__gift {
+    min-height: 200px;
     margin-bottom: 75px;
   }
 }
@@ -79,5 +81,6 @@
   .catalog-add__gift {
     margin-bottom: 0;
     width: 245px;
+    min-height: 100%;
   }
 }

@@ -1,9 +1,12 @@
 .second-title {
-  width: fit-content;
-  position: relative;
-  margin: 0;
   background: #ffffff;
   box-shadow: -20px 0 0 #ffffff, 20px 0 0 #ffffff;
+
+  &--line {
+    width: fit-content;
+    position: relative;
+    margin: 0;
+  }
 
   &--line::before {
     content: "";

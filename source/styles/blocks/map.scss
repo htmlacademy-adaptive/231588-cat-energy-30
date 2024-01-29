@@ -6,6 +6,12 @@
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 25px;
+
+  background-color: $basic-text-background;
+
+  &--white-bg {
+    background-color: #ffffff;
+  }
 }
 
 .map__title {
@@ -27,10 +33,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $paragraf-font-color;
+}
 
-  & span {
-    display: inline;
-  }
+.map__address-item {
+  display: inline;
 }
 
 .map__image {
@@ -64,11 +70,15 @@
 
     font-size: 16px;
     text-align: right;
+  }
 
-    & span {
-      display: block;
-      padding-top: 18px;
-    }
+  .map__address-item {
+    display: block;
+    padding-top: 18px;
+  }
+
+  .map__image iframe {
+    min-height: 400px;
   }
 }
 

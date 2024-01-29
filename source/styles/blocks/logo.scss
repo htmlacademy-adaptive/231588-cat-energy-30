@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
 
-  &:hover {
-    opacity: 0.3;
+  &:hover:not([aria-current]) {
+    opacity: 0.8;
   }
 
   &:active {
@@ -20,12 +20,11 @@
   width: 101px;
   margin-left: 56px;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
+  &--footer {
+    width: 128px;
+    height: 24px;
+    margin-left: 0;
+    align-self: center;
   }
 }
 
@@ -40,11 +39,22 @@
 
   .logo__text {
     margin-left: 13px;
+
+    &--footer {
+      margin-left: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__image {
     width: 70px;
+  }
+
+  .logo__text {
+    &--header {
+      width: 118px;
+      height: 21px;
+    }
   }
 }

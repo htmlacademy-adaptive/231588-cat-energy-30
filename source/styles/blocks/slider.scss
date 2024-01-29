@@ -45,21 +45,21 @@
     z-index: 6;
   }
 
-  &:hover,
-  &:hover::after {
+  &:hover:not(.disabled),
+  &:hover:not(.disabled)::after {
     background-color: $primary-color;
   }
 
-  &:hover::before {
+  &:hover:not(.disabled)::before {
     border-color: $primary-color;
   }
 
-  &:active,
-  &:active::after {
+  &:active:not(.disabled),
+  &:active:not(.disabled)::after {
     background-color: rgba(94, 170, 47, 0.6);
   }
 
-  &:active::before {
+  &:active:not(.disabled)::before {
     border-color: rgba(94, 170, 47, 0.6);
   }
 }
