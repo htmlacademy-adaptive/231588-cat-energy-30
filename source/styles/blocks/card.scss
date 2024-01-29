@@ -79,8 +79,8 @@
   text-transform: uppercase;
   color: #222222;
 
-  &:hover .card__title,
-  &:active .card__title {
+  &:hover:not(.disabled) .card__title,
+  &:active:not(.disabled) .card__title {
     opacity: 0.6;
   }
 }

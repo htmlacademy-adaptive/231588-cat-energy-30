@@ -21,7 +21,7 @@
     display: block;
     width: 28px;
     height: 22px;
-    
+
     background-color: #666666;
   }
 
@@ -37,11 +37,11 @@
     mask-image: url("../../images/icons/stack.svg#telegram");
   }
 
-  &:hover::after {
+  &:hover:not(.disabled)::after {
     background-color: $primary-color;
   }
 
-  &:focus::after {
+  &:focus:not(.disabled)::after {
     opacity: 0.3;
   }
 }

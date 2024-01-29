@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
 
-  &:hover {
-    opacity: 0.3;
+  &:hover:not([aria-current]) {
+    opacity: 0.8;
   }
 
   &:active {
@@ -19,14 +19,6 @@
 .logo__text {
   width: 101px;
   margin-left: 56px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 
   &--footer {
     width: 128px;
@@ -47,6 +39,10 @@
 
   .logo__text {
     margin-left: 13px;
+
+    &--footer {
+      margin-left: 0;
+    }
   }
 }
 
@@ -59,10 +55,6 @@
     &--header {
       width: 118px;
       height: 21px;
-    }
-
-    &--footer {
-      margin-left: 0;
     }
   }
 }

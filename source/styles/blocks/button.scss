@@ -12,11 +12,13 @@
   color: #ffffff;
   border: none;
 
-  &:hover {
+  &:hover:not(:disabled),
+  &:hover:not(.disabled) {
     background-color: #5eaa2f;
   }
 
-  &:active {
+  &:active:not(.disabled),
+  &:active:not(:disabled) {
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
@@ -25,11 +27,13 @@
     background-color: $basic-text-background;
     color: $paragraf-font-color;
 
-    &:hover {
+    &:hover:not(.disabled),
+    &:hover:not(:disabled) {
       background-color: #ebebeb;
     }
 
-    &:active {
+    &:active:not(.disabled),
+    &:active:not(:disabled) {
       background-color: #ebebeb;
       color: $paragraf-font-color;
     }

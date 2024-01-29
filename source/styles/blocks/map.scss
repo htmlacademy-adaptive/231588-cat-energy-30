@@ -76,6 +76,10 @@
     display: block;
     padding-top: 18px;
   }
+
+  .map__image iframe {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -18,11 +18,11 @@
 
   border-bottom: #e6e6e6 solid 1px;
 
-  &:hover {
+  &:hover:not([aria-current]) {
     opacity: 0.6;
   }
 
-  &:active {
+  &:active:not([aria-current]) {
     opacity: 0.3;
   }
 }
@@ -59,11 +59,11 @@
     &--light .site-list__link {
       color: #ffffff;
 
-      &:hover {
+      &:hover:not([aria-current]) {
         opacity: 0.6;
       }
 
-      &:active {
+      &:active:not([aria-current]) {
         opacity: 0.3;
       }
 

@@ -17,15 +17,15 @@
     background-color: #666666;
   }
 
-  &:hover::after {
+  &:hover:not(.disabled)::after {
     background-color: $primary-color;
   }
 
-  &:hover span {
+  &:hover:not(.disabled) .coopyright__text {
     color: $primary-color;
   }
 
-  &:focus {
+  &:focus:not(.disabled) {
     opacity: 0.3;
   }
 }
